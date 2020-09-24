@@ -1,0 +1,192 @@
+@import "header";
+@import "cover";
+@import "footer";
+// action buttons
+.btns-action {
+    // display: flex;
+    // flex-direction: column;
+    @media (min-width: $small-up) {
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+    .btn {
+        // width: 100%;
+        margin-bottom: 8px;
+        @media (min-width: $small-up) {
+            min-width: 120px;
+            width: auto;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+}
+
+// section
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    z-index: 1;
+    @media (max-width: $small-up) {
+        height: auto !important;
+        display: block;
+    }
+    @media (max-width: $medium-up) {
+        overflow: hidden;
+    }
+    @media (min-width: $medium-up) {
+        padding: 16px 2rem;
+    }
+    @media (min-width: $large-up) {
+        padding: 0;
+    }
+    @media (max-height: 480px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    &:after{
+        @media (max-height: 480px) {
+            content: "";
+            background: rgba(white,0.1);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            transition: 0.3s;
+        }
+    }
+    &.active{
+        &:after{
+            transform: scale(0.8);
+            opacity: 0;
+        }
+    }
+    &:nth-child(2n){
+        @media (max-width: $medium-up) {
+            background: transparentize(white, 0.95);
+        }
+    }
+    &.bg-bright {
+        color: $black;
+        .section-title{
+            h2{
+                color: $primary;
+            }
+        }
+        p, ul {
+            // color: transparentize($black, 0.25)
+            // color: in
+        }
+    }
+    h4, h5{
+        line-height: 1.6;
+    }
+    p, ul {
+        opacity: 0.75;
+        // color: transparentize($white, 0.25)
+        line-height: 1.6;
+        @media (min-width: $medium-up) {
+            line-height: 1.75;
+        }
+    }
+    .padding-top {
+        padding-top: 32px;
+        @media (min-width: $medium-up) {
+            padding-top: 64px;
+        }
+        @media (min-width: $large-up) {
+            padding-top: 80px;
+        }
+    }
+    .padding-bottom {
+        padding-bottom: 32px;
+        @media (min-width: $medium-up) {
+            padding-bottom: 64px;
+        }
+        @media (min-width: $large-up) {
+            padding-bottom: 80px;
+        }
+    }
+    .slide{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    // no-slide-arrows
+    &.no-slide-arrows{
+        .fp-controlArrow{
+            visibility: hidden;
+        }
+    }
+    .section-wrapper {
+        width: 100%;
+        // max-width: 1020px;
+        max-width: 800px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        &.largewidth{
+            max-width: 1020px;
+            // max-width: none;
+            // width: 100vw
+        }
+        .scrollable{
+            @media (min-width: $medium-up) {
+            //     max-height: 100vh;
+                padding-top: 80px;
+                padding-bottom: 80px;
+            //     overflow: hidden;
+            }
+            // overflow-y: auto;
+            // overflow-x: hidden;
+        }
+        @media (min-width: $medium-up) {
+            padding-left: 0;
+            padding-right: 0;
+            // max-height: 90vh;
+        }
+        @media (min-width: $xxlarge-up) {
+            max-width: 1200px;
+        }
+        &.fullwidth{
+            max-width: none;
+            padding-left: 0;
+            padding-right: 0;
+            @media (min-width: $xxlarge-up) {
+                max-width: none;
+            }
+        }
+    }
+}
+
+.section-item{
+    background: $black;
+}
+.section-gallery{
+    background: $black;
+}
+// fix scrolloverflow pugin
+.fp-scroller{
+    // display: flex;
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.fp-scrollable{
+    // display: flex;
+}
+
+@import 'section-title';
+@import 'section-content';
+@import 'section-anim';

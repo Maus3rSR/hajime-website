@@ -1,0 +1,20 @@
+{
+  "name": "hajime-website",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.17.3",
+    "nuxt": "^2.14.6",
+    "vue-fullpage.js": "^0.1.6",
+    "vue-i18n": "^8.21.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2"
+  }
+}
