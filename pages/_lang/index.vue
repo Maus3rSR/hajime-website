@@ -12,41 +12,63 @@ export default {
             },
         ],
         link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        bodyAttrs: {
+            id: "menu",
+            class: "body-page fp-viewing-home fp-responsive"
+        }
     },
-    data() {
+    methods: {
+        fillAnchors() {
+            this.options.anchors = []
+            this.sectionList.forEach(section => this.options.anchors.push(section.dataset.section))
+        }
+    },
+    data: function() {
         return {
+            sectionList: [],
             options: {
                 licenseKey: "800D1B93-C2C74D36-8E0392D6-8365BDFF",
                 menu: '#qmenu',
+                normalScrollElements: '.section .scrollable',
+                verticalCentered: false,
                 navigation: true,
 				responsiveWidth: 601,
                 responsiveHeight: 480,
-                anchors: pageAnchors,
-            }
+                anchors: [],
+            },
         }
+    },
+    mounted() {
+        this.sectionList = [...document.getElementsByClassName('section')]
+        this.fillAnchors()
     }
 }
 </script>
 
 <template>
-    <full-page ref="fullpage" :options="options" id="fullpage">
+    <full-page
+        id="fullpage"
+        ref="fullpage"
         
-        <section class="section section-home fullscreen-md fp-auto-height-responsive " data-section="home">
-            <!-- Begin of section wrapper -->
+        :options="options"
+    >
+        
+        <section class="section section-home fullscreen-md fp-auto-height-responsive" data-section="home">
             <div class="section-wrapper">
 
-                <!-- content -->
+                <div class="section-title text-center">
+                    <h1 class="title-bg">Hajime</h1>
+                </div>
+
                 <div class="section-content anim">
-                    <!-- title and description -->
                     <div class="title-desc">
-                        <h2 class="display-4 display-title">Simpleux is my
+                        <h2 class="display-4 display-title anim-1">Simpleux is my
                             <br>
                             <strong>Portfolio</strong>
                         </h2>
-                        <h4>A Bootstrap 4 based portfolio template, ready for modern and beautiful websites easily.</h4>
+                        <h3 class="anim-2">A Bootstrap 4 based portfolio template, ready for modern and beautiful websites easily.</h3>
                     </div>
 
-                    <!-- Action button -->
                     <div class="btns-action">
                         <a class="btn btn-outline-white btn-round" href="#services">
                             Get started
@@ -54,47 +76,38 @@ export default {
                     </div>
                 </div>
 
-                <!-- Arrows scroll down/up -->
                 <footer class="section-footer scrolldown">
-                    <a class="down">
+                    <a class="down" @click="$refs.fullpage.api.moveSectionDown()">
                         <span class="icon"></span>
                         <span class="txt">Scroll Down</span>
                     </a>
                 </footer>
             </div>
-            <!-- End of section wrapper -->
         </section>
 
-        <section class="section section-description fp-auto-height-responsive " data-section="about">
-            <!-- Begin of section wrapper -->
+        <section class="section section-description fp-auto-height-responsive" data-section="about">
             <div class="section-wrapper">
-                <!-- title -->
                 <div class="section-title text-center">
-                    <h5 class="title-bg">About</h5>
-                    <h2 class="display-4 display-title">Modern Website for your business</h2>
+                    <h1 class="title-bg">About</h1>
                 </div>
 
-                <!-- content -->
-                <div class="section-content reduced anim text-center">
-                    <!-- title and description -->
-                    <div class="title-desc">
+                <div class="section-content reduced anim text-center anim-2">
+                    <h2 class="display-4 display-title anim-2">Modern Website for your business</h2>
+                    <div class="title-desc anim-3">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum
                             bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo.
                             Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit
                             amet, lobortis dui. Fusce in urna sem.</p>
                     </div>
-
                 </div>
 
-                <!-- Arrows scroll down/up -->
                 <footer class="section-footer scrolldown">
-                    <a class="down">
+                    <a class="down" @click="$refs.fullpage.api.moveSectionDown()">
                         <span class="icon"></span>
                         <span class="txt">Our Services</span>
                     </a>
                 </footer>
             </div>
-            <!-- End of section wrapper -->
         </section>
 
     </full-page>
