@@ -174,23 +174,13 @@ export default {
             <div class="footer-right">
                 <ul class="social">
                     <li>
-                        <a href="">
-                            <i class="icon fa fa-facebook"></i>
+                        <a href="https://github.com/Maus3rSR/Hajime" target="_blank">
+                            <i class="icon fab fa-github"></i>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <i class="icon fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="icon fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="icon fa fa-instagram"></i>
+                            <i class="icon fab fa-patreon"></i>
                         </a>
                     </li>
                 </ul>

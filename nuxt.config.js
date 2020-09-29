@@ -4,8 +4,8 @@ export default {
     },
     css: [
         '~/assets/css/full-page.min.css',
-        '~/assets/fonts/font-awesome.min.css',
-        '~/assets/fonts/ionicons.css',
+        '~/assets/fonts/font-awesome/font-awesome.min.css',
+        '~/assets/fonts/ionicons/ionicons.min.css',
         '~/assets/fonts/bebas/stylesheet.css',
         '~/assets/fonts/opensans/stylesheet.css',
         '~/assets/sass/main.scss',
