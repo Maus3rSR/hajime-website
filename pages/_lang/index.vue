@@ -62,17 +62,22 @@ export default {
 
                 <div class="section-content anim">
                     <div class="title-desc">
-                        <h2 class="display-4 display-title anim-1">Simpleux is my
-                            <br>
-                            <strong>Portfolio</strong>
+                        <h2 class="display-4 display-title anim-1">
+                            Hajime
                         </h2>
-                        <h3 class="anim-2">A Bootstrap 4 based portfolio template, ready for modern and beautiful websites easily.</h3>
+                        <h3 class="anim-2">
+                            Competition software management
+                        </h3>
                     </div>
 
                     <div class="btns-action">
-                        <a class="btn btn-outline-white btn-round" href="#services">
-                            Get started
+                        <a class="btn btn-white btn-round btn-full" href="#services">
+                            Download for free
                         </a>
+                    </div>
+
+                    <div class="btns-action">
+                        <a href="btn btn-link">View the project on GITHub</a>
                     </div>
                 </div>
 

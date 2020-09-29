@@ -91,20 +91,21 @@ export default {
 
                 <nav class="navbar-mainmenu">
                     <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html#home">Home
-                        <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./item.html">Item</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./demo.html">Demo</a>
-                    </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">
+                                Downloads
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Donation history</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Release notes</a>
+                        </li>
                     </ul>
                 </nav>
 
@@ -112,38 +113,12 @@ export default {
                     <ul class="navbar-nav" id="qmenu">
                         <li class="nav-item" data-menuanchor="home">
                             <a href="#home">
-                            <i class="icon ion-ios-home-outline"></i>
-                            <span class="txt">Home</span>
+                                <span class="txt">Download</span>
                             </a>
                         </li>
                         <li class="nav-item" data-menuanchor="about">
                             <a href="#about">
-                            <i class="icon ion-ios-information-outline"></i>
-                            <span class="txt">About</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" data-menuanchor="services">
-                            <a href="#services">
-                            <i class="icon ion-ios-list-outline"></i>
-                            <span class="txt">Services</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" data-menuanchor="projects">
-                            <a href="#projects">
-                            <i class="icon ion-ios-albums-outline"></i>
-                            <span class="txt">Projects</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" data-menuanchor="register">
-                            <a href="#register">
-                            <i class="icon ion-ios-compose-outline"></i>
-                            <span class="txt">Register</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" data-menuanchor="contact">
-                            <a href="#contact">
-                            <i class="icon ion-ios-telephone-outline"></i>
-                            <span class="txt">Contact</span>
+                                <span class="txt">About</span>
                             </a>
                         </li>
                     </ul>
@@ -174,12 +149,12 @@ export default {
             <div class="footer-right">
                 <ul class="social">
                     <li>
-                        <a href="https://github.com/Maus3rSR/Hajime" target="_blank">
+                        <a href="https://github.com/Maus3rSR/Hajime" target="_blank" title="GITHub Page">
                             <i class="icon fab fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="" target="_blank" title="Patreon Page">
                             <i class="icon fab fa-patreon"></i>
                         </a>
                     </li>
