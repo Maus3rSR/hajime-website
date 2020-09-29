@@ -57,13 +57,16 @@ export default {
             <div class="section-wrapper">
 
                 <div class="section-title text-center">
-                    <h1 class="title-bg">Hajime</h1>
+                    <h1 class="title-bg">
+                        Hajime
+                    </h1>
                 </div>
 
                 <div class="section-content anim">
                     <div class="title-desc">
                         <h2 class="display-4 display-title anim-1">
                             Hajime
+                            <span class="badge badge-warning">pre-alpha</span>
                         </h2>
                         <h3 class="anim-2">
                             {{ $t("home.subtitle") }}
@@ -94,7 +97,7 @@ export default {
                 <footer class="section-footer scrolldown">
                     <a class="down" @click="$refs.fullpage.api.moveSectionDown()">
                         <span class="icon"></span>
-                        <span class="txt">Scroll Down</span>
+                        <span class="txt">{{ $t("about.index") }}</span>
                     </a>
                 </footer>
             </div>
@@ -103,7 +106,7 @@ export default {
         <section class="section section-description fp-auto-height-responsive" data-section="about">
             <div class="section-wrapper">
                 <div class="section-title text-center">
-                    <h1 class="title-bg">About</h1>
+                    <h1 class="title-bg">{{ $t("about.index") }}</h1>
                 </div>
 
                 <div class="section-content reduced anim text-center anim-2">

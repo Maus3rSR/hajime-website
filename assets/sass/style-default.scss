@@ -73,3 +73,14 @@ a{
         opacity: 0.7;
     }
 }
+
+.display-title {
+    position: relative;
+
+    > .badge {
+        position: absolute;
+        font-size: .8rem;
+        rotate: 15deg;
+        margin-left: -35px;
+    }
+}

@@ -3,5 +3,20 @@
         "subtitle": "Gérer les compétitions n'a jamais été aussi simple",
         "download": "Télécharger gratuitement",
         "view": "Voir le projet sur Github"
+    },
+    "about": {
+        "index": "À propos"
+    },
+    "author": {
+        "index": "Auteur"
+    },
+    "feature": {
+        "index": "Fonctionnalités"
+    },
+    "support": {
+        "index": "Soutenir"
+    },
+    "contact": {
+        "index": "Contact"
     }
 }

@@ -3,5 +3,20 @@
         "subtitle": "Managing competitions never been so easy",
         "download": "Download for free",
         "view": "View the project on Github"
+    },
+    "about": {
+        "index": "About"
+    },
+    "author": {
+        "index": "Auteur"
+    },
+    "feature": {
+        "index": "Features"
+    },
+    "support": {
+        "index": "Support"
+    },
+    "contact": {
+        "index": "Contact"
     }
 }
