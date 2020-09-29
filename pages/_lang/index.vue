@@ -66,18 +66,28 @@ export default {
                             Hajime
                         </h2>
                         <h3 class="anim-2">
-                            Competition software management
+                            {{ $t("home.subtitle") }}
                         </h3>
                     </div>
 
                     <div class="btns-action">
                         <a class="btn btn-white btn-round btn-full" href="#services">
-                            Download for free
+                            {{ $t("home.download") }}
                         </a>
                     </div>
 
                     <div class="btns-action">
-                        <a href="btn btn-link">View the project on GITHub</a>
+                        <a href="https://github.com/Maus3rSR/Hajime" target="_blank">
+                            {{ $t("home.view") }}
+                        </a>
+                    </div>
+                    <div class="btns-action">
+                        <a href="/fr">
+                            <span class="flag-icon flag-icon-fr"></span>
+                        </a>
+                        <a href="/">
+                            <span class="flag-icon flag-icon-gb"></span>
+                        </a>
                     </div>
                 </div>
 

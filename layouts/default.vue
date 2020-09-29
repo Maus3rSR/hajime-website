@@ -79,15 +79,9 @@ export default {
             </a>
 
             <div class="all-menu-wrapper" id="navbarMenu">
-                <nav class="navbar-topmenu">
-                    <ul class="navbar-nav navbar-nav-actions">
-                    <li class="nav-item">
-                        <a class="btn btn-outline-white btn-round" target="_blank" href="https://themeforest.net/item/simpleux-beautiful-creative-website-template-for-agency-business-and-portfolio/20863111">
-                        Buy Now
-                        </a>
-                    </li>
-                    </ul>
-                </nav>
+                <!-- <nav class="navbar-topmenu">
+                    <ul class="navbar-nav navbar-nav-actions"></ul>
+                </nav> -->
 
                 <nav class="navbar-mainmenu">
                     <ul class="navbar-nav mr-auto">
@@ -113,7 +107,7 @@ export default {
                     <ul class="navbar-nav" id="qmenu">
                         <li class="nav-item" data-menuanchor="home">
                             <a href="#home">
-                                <span class="txt">Download</span>
+                                <span class="txt">Hajime</span>
                             </a>
                         </li>
                         <li class="nav-item" data-menuanchor="about">
