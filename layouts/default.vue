@@ -164,9 +164,9 @@ export default {
 
         <footer id="site-footer" class="page-footer">
             <div class="footer-left">
-                <p>PORTFOLIO BY
-                    <a href="http://highhay.com">
-                    <span class="marked">BRAND</span>
+                <p>
+                    <a href="https://www.linkedin.com/in/kevinunfricht/" target="_blank">
+                        <img src="~assets/images/k.png" width="20" alt="Kevin UNFRICHT">
                     </a>
                 </p>
             </div>
