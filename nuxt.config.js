@@ -1,7 +1,15 @@
 export default {
-    router: {
-        middleware: 'i18n'
+    components: true,
+    router: { middleware: 'i18n' },
+    generate: {
+        routes: [ '/', '/fr' ]
     },
+    modules: [ 'bootstrap-vue/nuxt' ],
+    bootstrapVue: { css: false, bvCSS: false },
+    plugins: [
+        '~/plugins/i18n.js',
+        { src:'~/plugins/fullPage.js', ssr: false },
+    ],
     css: [
         '~/assets/css/full-page.min.css',
         '~/assets/css/flag-icon.min.css',
@@ -10,14 +18,5 @@ export default {
         '~/assets/fonts/bebas/stylesheet.css',
         '~/assets/fonts/opensans/stylesheet.css',
         '~/assets/sass/main.scss',
-    ],
-    modules: [ 'bootstrap-vue/nuxt' ],
-    bootstrapVue: { css: false, bvCSS: false },
-    plugins: [
-        '~/plugins/i18n.js',
-        { src:'~/plugins/fullPage.js', ssr: false },
-    ],
-    generate: {
-        routes: [ '/', '/fr' ]
-    }
+    ]
 }

@@ -1,0 +1,14 @@
+section[data-section="author"] {
+    .section-content {
+        position: relative;
+
+        > div {
+            background: red;
+            display: block;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+    }
+}
