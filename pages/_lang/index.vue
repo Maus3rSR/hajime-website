@@ -110,19 +110,38 @@ export default {
                 </div>
 
                 <div class="section-content reduced anim text-center anim-2">
-                    <h2 class="display-4 display-title anim-2">Modern Website for your business</h2>
+                    <h2 class="display-4 display-title anim-2">{{ $t("about.subtitle") }}</h2>
                     <div class="title-desc anim-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum
-                            bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo.
-                            Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit
-                            amet, lobortis dui. Fusce in urna sem.</p>
+                        <i18n tag="p" path="about.description.index">
+                            <strong>{{ $t("about.description.optimize") }}</strong>
+                            <strong><mark>{{ $t("about.description.event") }}</mark></strong>
+                        </i18n>
                     </div>
                 </div>
 
                 <footer class="section-footer scrolldown">
                     <a class="down" @click="$refs.fullpage.api.moveSectionDown()">
                         <span class="icon"></span>
-                        <span class="txt">Our Services</span>
+                        <span class="txt">{{ $t("author.index") }}</span>
+                    </a>
+                </footer>
+            </div>
+        </section>
+
+        <section class="section section-description fp-auto-height-responsive" data-section="author">
+            <div class="section-wrapper">
+                <div class="section-title text-center">
+                    <h1 class="title-bg">{{ $t("author.index") }}</h1>
+                </div>
+
+                <div class="section-content reduced anim text-center anim-2">
+                    Blabla
+                </div>
+
+                <footer class="section-footer scrolldown">
+                    <a class="down" @click="$refs.fullpage.api.moveSectionDown()">
+                        <span class="icon"></span>
+                        <span class="txt">{{ $t("feature.index") }}</span>
                     </a>
                 </footer>
             </div>
