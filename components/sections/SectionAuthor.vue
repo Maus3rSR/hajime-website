@@ -1,48 +1,37 @@
 <script>
 export default {
     methods: {
-        authorContentMove(e)
-        {
-            const mouseRatio = e.pageX - this.sectionContent.offsetLeft
-console.log(mouseRatio)
-            this.authorContentList.forEach(content => {
-                
-
-                // if (content.classList.contains("author__developer")) {
-                //     content.style.width = `${840 - 840 * mouseRatio}px`
-                //     content.style.left = `${100 + 260 - 520 * mouseRatio}px`
-                // }
-                // else if (content.classList.contains("author__kendo")) {
-                //     content.style.width = `${840 - 840 * (1 - mouseRatio)}px`
-                //     content.style.right = `${100 + 260 - 520 * (1 - mouseRatio)}px`
-                // }
-            })
+        lerp(start, end, amt){
+            return (1 - amt ) * start + amt * end
         },
-        authorContentLeave()
-        {
-            // this.authorContentList.forEach(content => {
-            //     content.style.width = "420px"
+        onEnter(e) {
+            this.oldValues.offsetLeftContent = this.leftContent.offsetLeft
+            this.oldValues.offsetRightContent = this.oldValues.offsetLeftContent
+        },
+        onMove(e) {
+            const mouseRatio = (e.pageX - this.sectionContent.offsetLeft) / this.sectionContent.clientWidth
+            console.log(this.sectionContent.clientWidth)
 
-            //     if (content.classList.contains("author__developer"))
-            //         content.style.left = "100px"
-            //     if (content.classList.contains("author__kendo"))
-            //         content.style.right = "100px"
-            // })
+            this.leftContent.style.left = `${this.oldValues.offsetLeftContent + this.lerp(-this.oldValues.offsetLeftContent, this.oldValues.offsetLeftContent, 1 - mouseRatio)}px`
+            this.rightContent.style.right = `${this.oldValues.offsetRightContent + this.lerp(-this.oldValues.offsetRightContent, this.oldValues.offsetRightContent, mouseRatio)}px`
+        },
+        onLeave() {
+            this.leftContent.style.left = null
+            this.rightContent.style.right = null
         }
     },
     data() {
         return {
-            loop: null,
             sectionContent: null,
-            authorContentList: [],
+            leftContent: null,
+            rightContent: null,
+            oldValues: {
+                offsetLeftContent: null,
+                offsetRightContent: null,
+            }
         }
     },
     mounted() {
-        this.sectionContent = document.getElementById("section__author").getElementsByClassName('section-content')[0]
-        this.authorContentList = [...document.getElementsByClassName("author__content")]
-
-        this.sectionContent.addEventListener("mousemove", this.authorContentMove)
-        this.sectionContent.addEventListener("mouseleave", this.authorContentLeave)
     }
 }
 </script>
@@ -56,8 +45,8 @@ console.log(mouseRatio)
             </div>
 
             <div class="section-content">
-                <div class="author__content author__developer"></div>
-                <div class="author__content author__kendo"></div>
+                <div id="author-img--dev" class="author-img"></div>
+                <div id="author-img--kendo" class="author-img"></div>
             </div>
 
             <footer class="section-footer scrolldown">
@@ -75,39 +64,50 @@ console.log(mouseRatio)
     justify-content: flex-start;
 
     .section-content {
-        width: 1040px;
-        margin: 0 auto;
+        height: 100vh;
         position: relative;
 
-        .author__content {
-            transition: all ease 1000ms;
-            display: block;
+        .author-img {
+            transition: all 1000ms ease;
             position: absolute;
             width: 0;
-            height: 65vh;
             top: 10vh;
-            z-index: 1;
+            height: 60vh;
             overflow: hidden;
-            // background: url("~assets/images/sprite-author.png") 0 0 no-repeat;
 
-            &.author__developer {
-                left: 0;
-                // background-position: 7vw -600px;
-                background-color: blue;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 840px;
+                height: 600px;
+                background: url("~assets/images/sprite-author.png") 0 0 no-repeat;
+                background-size: 100%;
             }
 
-            &.author__kendo {
-                right: 0;
-                // background-position: -17vw 0px;
+            &#author-img--dev {
+                left: 10%;
                 background-color: red;
+
+                &::after {
+                }
+            }
+
+            &#author-img--kendo {
+                right: 10%;
+                background-color: blue;
+
+                &::after {
+                    background-position: 0 -600px;
+                }
             }
         }
     }
 
     &.active {
         .section-content {
-            > div {
-                width: 50%;
+           .author-img {
+               width: 40%;
             }
         }
     }
