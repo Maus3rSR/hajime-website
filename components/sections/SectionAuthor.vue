@@ -46,7 +46,7 @@ export default {
         <div class="slide">
             <div class="section-wrapper twoside center-vh dir-col">
                 <div class="item row justify-content-between">
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-6 center-vh">
                         <div class="section-content anim translateUp">
                             <div class="images text-center">
                                 <div class="img-frame-legend-alpha">
@@ -55,25 +55,29 @@ export default {
 
                                     <div class="legend">
                                         <h2 class="display-4">
-                                            <strong>Développeur</strong>
+                                            <strong>{{ $t("author.developer") }}</strong>
                                         </h2>
-                                        <p>Web - Unity - 3D</p>
+                                        <p>Kevin UNFRICHT</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-5">
+                    <div class="col-12 col-sm-7 col-md-6">
                         <div class="section-content anim">
                             <div class="title-desc">
-                                <p>Bonjour, je suis Kevin UNFRICHT</p>
-                                <p>
-                                    Développeur web enthousiaste avec <strong>+7 ans d'expériences professionnelles</strong>. Je souhaite mettre à profit toute mon expertise pour
-                                    offrir à <mark>Hajime</mark> la meilleure expérience possible pour la communauté Kendo internationale. 
-                                </p>
+                                <i18n tag="p" path="author.description.index">
+                                    <strong>{{ $t("author.description.experience") }}</strong>
+                                    <mark>Hajime</mark>
+                                </i18n>
                             </div>
                         </div>
+
+                        <a class="btn btn-transp-arrow btn-outline btn-primary btn-round" @click="$emit('on-slide-next')">
+                            <span class="icon arrow-right"></span>
+                            <span class="text">{{ $t("author.button") }}</span>
+                        </a>
 
                         <ul class="nav">
                             <li class="nav-item">
@@ -86,17 +90,7 @@ export default {
                                     MALT
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://maus3rsr.artstation.com/" target="_blank">
-                                    <i class="fab fa-artstation"></i>
-                                </a>
-                            </li>
                         </ul>
-
-                        <a class="btn btn-transp-arrow btn-outline btn-primary btn-round" @click="$emit('on-slide-next')">
-                            <span class="icon arrow-right"></span>
-                            <span class="text">Dans l'ombre je suis également...</span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -105,16 +99,20 @@ export default {
         <div class="slide">
             <div class="section-wrapper twoside center-vh dir-col">
                 <div class="item row justify-content-between">
-                    <div class="col-12 col-sm-6 col-md-5">
+                    <div class="col-12 col-sm-5 col-md-6">
                         <div class="section-content anim">
                             <div class="title-desc">
-                                <p>Bonjour, je suis Kevin UNFRICHT</p>
-                                <p>
-                                    Développeur web enthousiaste avec <strong>+7 ans d'expériences professionnelles</strong>. Je souhaite mettre à profit toute mon expertise pour
-                                    offrir à <mark>Hajime</mark> la meilleure expérience possible pour la communauté Kendo internationale. 
-                                </p>
+                                <p>{{ $t("author.description-kendo.kenshi") }}</p>
+                                <i18n tag="p" path="author.description-kendo.experience">
+                                    <mark>Hajime</mark>
+                                </i18n>
                             </div>
                         </div>
+
+                        <a class="btn btn-transp-arrow btn-outline btn-primary btn-round" @click="$emit('on-slide-previous')">
+                            <span class="icon arrow-left"></span>
+                            <span class="text">{{ $t("author.button") }}</span>
+                        </a>
 
                         <ul class="nav">
                             <li class="nav-item">
@@ -123,14 +121,9 @@ export default {
                                 </a>
                             </li>
                         </ul>
-
-                        <a class="btn btn-transp-arrow btn-outline btn-primary btn-round" @click="$emit('on-slide-previous')">
-                            <span class="icon arrow-left"></span>
-                            <span class="text">À la lumière je suis également...</span>
-                        </a>
                     </div>
 
-                    <div class="col-12 col-sm-6">
+                    <div class="col-12 col-sm-6 center-vh">
                         <div class="section-content anim translateUp">
                             <div class="images text-center">
                                 <div class="img-frame-legend-alpha">
