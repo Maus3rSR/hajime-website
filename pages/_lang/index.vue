@@ -21,6 +21,12 @@ export default {
         nextSection() {
             this.$refs.fullpage.api.moveSectionDown()
         },
+        previousSlide() {
+            this.$refs.fullpage.api.moveSlideLeft()
+        },
+        nextSlide() {
+            this.$refs.fullpage.api.moveSlideRight()
+        },
         fillAnchors() {
             this.options.anchors = []
             this.sectionList.forEach(section => this.options.anchors.push(section.dataset.section))
@@ -70,6 +76,8 @@ export default {
 
         <section-author
             @on-section-next="nextSection()"
+            @on-slide-previous="previousSlide()"
+            @on-slide-next="nextSlide()"
         />
 
     </full-page>

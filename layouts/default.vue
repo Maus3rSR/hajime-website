@@ -168,6 +168,11 @@ export default {
                         </a>
                     </li>
                     <li>
+                        <a href="" target="_blank" title="Discord">
+                            <i class="icon fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
                         <a href="" target="_blank" title="Patreon Page">
                             <i class="icon fab fa-patreon"></i>
                         </a>
