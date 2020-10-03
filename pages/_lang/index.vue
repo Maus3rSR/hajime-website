@@ -44,6 +44,8 @@ export default {
                 normalScrollElements: '.section .scrollable',
                 verticalCentered: false,
                 navigation: true,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
 				responsiveWidth: 601,
                 responsiveHeight: 480,
                 anchors: [],
@@ -70,19 +72,14 @@ export default {
             @on-section-next="nextSection()"
         />
 
-        <section-about
-            @on-section-next="nextSection()"
-        />
+        <section-about />
 
         <section-author
-            @on-section-next="nextSection()"
             @on-slide-previous="previousSlide()"
             @on-slide-next="nextSlide()"
         />
 
-        <section-feature
-            @on-section-next="nextSection()"
-        />
+        <section-feature />
 
     </full-page>
 </template>

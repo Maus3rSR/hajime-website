@@ -143,26 +143,15 @@ export default {
                 </div>
             </div>
         </div>
-
-        <footer class="section-footer scrolldown">
-            <a class="down" @click="$emit('on-section-next')">
-                <span class="icon"></span>
-                <span class="txt">{{ $t("feature.index") }}</span>
-            </a>
-        </footer>
     </section>
 </template>
 
-<style lang="scss" scoped>
-.section {
-    &.active {
-        
-    }
-}
-</style>
-
 <style>
 #section-author .fp-controlArrow {
+    display: none;
+}
+
+#section-author .fp-slidesNav {
     display: none;
 }
 </style>

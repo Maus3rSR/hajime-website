@@ -187,6 +187,23 @@
     // display: flex;
 }
 
+.section {
+    .fp-slidesNav {
+        text-align: center;
+    
+        &.fp-bottom {
+            bottom: 50px;
+        }
+    
+        a.active {
+            span {
+                width: 18px;
+                border-radius: 30%;
+            }
+        }
+    }
+}
+
 @import 'section-title';
 @import 'section-content';
 @import 'section-anim';

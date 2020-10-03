@@ -32,10 +32,10 @@
                 </div>
                 <div class="btns-action">
                     <a href="/fr">
-                        <span class="flag-icon flag-icon-fr"></span>
+                        <span class="flag-icon flag-icon-fr" />
                     </a>
                     <a href="/">
-                        <span class="flag-icon flag-icon-gb"></span>
+                        <span class="flag-icon flag-icon-gb" />
                     </a>
                 </div>
             </div>
@@ -43,7 +43,7 @@
             <footer class="section-footer scrolldown">
                 <a class="down" @click="$emit('on-section-next')">
                     <span class="icon"></span>
-                    <span class="txt">{{ $t("about.index") }}</span>
+                    <span class="txt">Scroll</span>
                 </a>
             </footer>
         </div>

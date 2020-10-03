@@ -14,13 +14,6 @@
                     </i18n>
                 </div>
             </div>
-
-            <footer class="section-footer scrolldown">
-                <a class="down" @click="$emit('on-section-next')">
-                    <span class="icon"></span>
-                    <span class="txt">{{ $t("author.index") }}</span>
-                </a>
-            </footer>
         </div>
     </section>
 </template>
