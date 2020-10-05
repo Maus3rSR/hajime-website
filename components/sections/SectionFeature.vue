@@ -17,12 +17,12 @@
                                     <i class="icon fas fa-sitemap"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h2>Formule de compétition</h2>
+                                    <h2>{{ $t("feature.competitionFormula.title") }}</h2>
                                     <p>
-                                        Choisissez votre type de compétition : poule, arbre éliminatoire, ou les deux
+                                        {{ $t("feature.competitionFormula.description") }}
                                         <span class="badge badge-warning">
                                             <i class="fas fa-exclamation-triangle"></i>
-                                            Arbre éliminatoire en développement
+                                            {{ $t("feature.alert.tree") }}
                                         </span>
                                     </p>
                                 </div>
@@ -33,9 +33,9 @@
                                     <i class="icon fas fa-users"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h2>Équipe</h2>
+                                    <h2>{{ $t("feature.team.title") }}</h2>
                                     <p>
-                                        En plus du mode individuel, vous pouvez former des équipes avec un nombre de combattants fixe qui inclu également la gestion des remplaçants
+                                        {{ $t("feature.team.description") }}
                                     </p>
                                 </div>
                             </div>
@@ -51,9 +51,9 @@
                                     <i class="icon fas fa-file-csv"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h2>Import combattant</h2>
+                                    <h2>{{ $t("feature.fighterImport.title") }}</h2>
                                     <p>
-                                        Importez massivement la liste des combattants en un clin d'oeil avec un simple fichier CSV
+                                        {{ $t("feature.fighterImport.description") }}
                                     </p>
                                 </div>
                             </div>
@@ -63,11 +63,12 @@
                                     <i class="icon fas fa-language"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h2>Multilingue</h2>
-                                    <p>
-                                        <span class="flag-icon flag-icon-fr" /> et <span class="flag-icon flag-icon-gb" /> disponible.
-                                        Si vous voulez aider à la traduction ou traduire dans votre langue, <a href="#contact">contactez-nous</a>
-                                    </p>
+                                    <h2>{{ $t("feature.i18n.title") }}</h2>
+                                    <i18n tag="p" path="feature.i18n.description">
+                                        <span class="flag-icon flag-icon-fr" />
+                                        <span class="flag-icon flag-icon-gb" />
+                                        <a href="#contact">{{ $t("contact.us") }}</a>
+                                    </i18n>
                                 </div>
                             </div>
 
@@ -77,7 +78,80 @@
             </div>
 
             <div class="slide">
-                Blabla
+                <div class="item row justify-content-between">
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="section-content">
+
+                            <div class="media">
+                                <div class="img d-flex mr-3">
+                                    <i class="icon fas fa-tv"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h2>{{ $t("feature.scoreBoard.title") }}</h2>
+                                    <p>
+                                        {{ $t("feature.scoreBoard.description") }}
+                                        <span class="badge badge-warning">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            {{ $t("alert.development") }}
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="media">
+                                <div class="img d-flex mr-3">
+                                    <i class="icon fas fa-random"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h2>{{ $t("feature.draw.title") }}</h2>
+                                    <p>
+                                        {{ $t("feature.draw.description") }}
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="section-content">
+
+                            <div class="media">
+                                <div class="img d-flex mr-3">
+                                    <i class="icon fas fa-file-pdf"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h2>{{ $t("feature.pdf.title") }}</h2>
+                                    <p>
+                                        {{ $t("feature.pdf.description") }}
+                                        <span class="badge badge-warning">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            {{ $t("feature.alert.pool") }}
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="media">
+                                <div class="img d-flex mr-3">
+                                    <i class="icon fas fa-vector-square"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h2>{{ $t("feature.multiShiaijo.title") }}</h2>
+                                    <p>
+                                        {{ $t("feature.multiShiaijo.description") }}
+                                        <span class="badge badge-warning">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            {{ $t("alert.development") }}
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

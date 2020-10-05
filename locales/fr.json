@@ -1,4 +1,7 @@
 {
+    "alert": {
+        "development": "En développement"
+    },
     "home": {
         "subtitle": "Gérer les compétitions n'a jamais été aussi simple",
         "download": "Télécharger gratuitement",
@@ -27,12 +30,49 @@
         }
     },
     "feature": {
-        "index": "Fonctionnalités"
+        "index": "Fonctionnalités",
+        "alert": {
+            "tree": "Arbre éliminatoire @.lower:alert.development",
+            "pool": "Uniquement export poule disponible"
+        },
+        "competitionFormula": {
+            "title": "Formule de compétition",
+            "description": "Choisissez votre type de compétition : poule, arbre éliminatoire, ou les deux"
+        },
+        "fighterImport": {
+            "title": "Import combattant",
+            "description": "Importez massivement la liste des combattants en un clin d'oeil avec un simple fichier CSV"
+        },
+        "i18n": {
+            "title": "Multilingue",
+            "description": "{0} et {1} disponible. Si vous voulez aider à la traduction ou traduire dans votre langue : {2}"
+        },
+        "team": {
+            "title": "Équipe",
+            "description": "En plus du mode individuel, vous pouvez former des équipes avec un nombre de combattants fixe qui inclu également la gestion des remplaçants"
+        },
+        "scoreBoard": {
+            "title": "Tableau de marque",
+            "description": "Affichez un tableau des scores du combat en temps réel sur un autre écran"
+        },
+        "pdf": {
+            "title": "Export PDF",
+            "description": "Exportez dans un fichier PDF la liste des poules, le tableau éliminatoire, les tableaux de marque, pour ensuite les imprimer ou les archiver"
+        },
+        "draw": {
+            "title": "Tirage au sort",
+            "description": "Tirages au sort automatique, avec possibilité d'écart de favoris et écart de clubs"
+        },
+        "multiShiaijo": {
+            "title": "Multi-shiajō",
+            "description": "Connectez autant de PC qu'il n'y a de shiaijō vers la table centrale pour une gestion locale des combats"
+        }
     },
     "support": {
         "index": "Soutenir"
     },
     "contact": {
-        "index": "Contact"
+        "index": "Contact",
+        "us": "Contactez-nous"
     }
 }

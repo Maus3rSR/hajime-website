@@ -1,4 +1,7 @@
 {
+    "alert": {
+        "development": "In development"
+    },
     "home": {
         "subtitle": "Managing competitions never been so easy",
         "download": "Download for free",
@@ -27,12 +30,49 @@
         }
     },
     "feature": {
-        "index": "Features"
+        "index": "Features",
+        "alert": {
+            "tree": "Elimination tree @.lower:alert.development",
+            "pool": "Only pool export available"
+        },
+        "competitionFormula": {
+            "title": "Competition formula",
+            "description": "Choose your competition formula : pool, elimination tree, or both"
+        },
+        "fighterImport": {
+            "title": "Fighter import",
+            "description": "Speed up workflow by massively import fighters with a simple CSV file"
+        },
+        "i18n": {
+            "title": "Multilingual",
+            "description": "{0} and {1} are available. If you want to help translate or translate into your language: {2}"
+        },
+        "team": {
+            "title": "Team",
+            "description": "In addition to the individual mode, you can create teams with a fixed number of fighters which also includes substitutes management"
+        },
+        "scoreBoard": {
+            "title": "Score board",
+            "description": "Display live combat scoreboard onto another screen"
+        },
+        "pdf": {
+            "title": "PDF export",
+            "description": "Export pools, elimination tree, scoreboards, to then print or archive them"
+        },
+        "draw": {
+            "title": "Drawing lot",
+            "description": "Automatic draws, with the possibility of repulsing favorites and repulsing clubs"
+        },
+        "multiShiaijo": {
+            "title": "Multi-shiajō",
+            "description": "Connect as many PCs as there are shiaijō to the central table for local fight management"
+        }
     },
     "support": {
         "index": "Support"
     },
     "contact": {
-        "index": "Contact"
+        "index": "Contact",
+        "us": "Contact us"
     }
 }
