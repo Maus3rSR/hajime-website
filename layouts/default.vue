@@ -115,14 +115,14 @@ export default {
                                 <span class="txt">{{ $t("about.index") }}</span>
                             </a>
                         </li>
-                        <li class="nav-item" data-menuanchor="author">
-                            <a href="#author">
-                                <span class="txt">{{ $t("author.index") }}</span>
-                            </a>
-                        </li>
                         <li class="nav-item" data-menuanchor="feature">
                             <a href="#feature">
                                 <span class="txt">{{ $t("feature.index") }}</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-menuanchor="author">
+                            <a href="#author">
+                                <span class="txt">{{ $t("author.index") }}</span>
                             </a>
                         </li>
                         <li class="nav-item" data-menuanchor="support">

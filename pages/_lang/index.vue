@@ -74,12 +74,12 @@ export default {
 
         <section-about />
 
+        <section-feature />
+
         <section-author
             @on-slide-previous="previousSlide()"
             @on-slide-next="nextSlide()"
         />
-
-        <section-feature />
 
     </full-page>
 </template>
