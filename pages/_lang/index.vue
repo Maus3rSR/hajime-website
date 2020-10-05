@@ -81,5 +81,7 @@ export default {
             @on-slide-next="nextSlide()"
         />
 
+        <section-support />
+
     </full-page>
 </template>

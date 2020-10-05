@@ -173,7 +173,7 @@ export default {
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" title="Patreon Page">
+                        <a href="https://www.patreon.com/hajime_software" target="_blank" title="Patreon Page">
                             <i class="icon fab fa-patreon"></i>
                         </a>
                     </li>
