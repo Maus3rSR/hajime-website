@@ -11,8 +11,8 @@
         "index": "À propos",
         "subtitle": "Concentrez-vous sur ce qui compte vraiment",
         "description": {
-            "index": "Hajime {0} certaines tâches faites manuellement comme le tirage au sort, la distribution des points, l'affichage des tableaux de marques... Et vous permet de gagner du temps vous permettant de vous concentrer sur le plus important : {1}",
-            "optimize": "optimise et automatise",
+            "index": "Vous méritez de pouvoir offrir une organisation de qualité. Hajime vous aide à {0} certaines tâches faites manuellement comme le tirage au sort, la distribution des points, l'affichage des tableaux de marques... Et vous permet de gagner du temps vous permettant de vous concentrer sur le plus important : {1}",
+            "optimize": "optimiser et automatiser",
             "event": "l'évènementiel"
         }
     },
