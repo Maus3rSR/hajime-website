@@ -2,6 +2,9 @@
     "alert": {
         "development": "En développement"
     },
+    "number": {
+        "third": "3ème"
+    },
     "home": {
         "subtitle": "Gérer les compétitions n'a jamais été aussi simple",
         "download": "Télécharger gratuitement",

@@ -2,6 +2,9 @@
     "alert": {
         "development": "In development"
     },
+    "number": {
+        "third": "3rd"
+    },
     "home": {
         "subtitle": "Managing competitions never been so easy",
         "download": "Download for free",

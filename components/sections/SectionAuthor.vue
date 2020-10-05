@@ -134,7 +134,7 @@ export default {
                                         <h2 class="display-4">
                                             <strong>Kenshi</strong>
                                         </h2>
-                                        <p>3ème DAN</p>
+                                        <p>{{ $t("number.third") }} DAN</p>
                                     </div>
                                 </div>
                             </div>
