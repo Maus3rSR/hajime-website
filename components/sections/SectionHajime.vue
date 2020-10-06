@@ -1,3 +1,13 @@
+<script>
+export default {
+    computed: {
+        github_url() {
+            return process.env.githubUrl
+        }
+    }
+}
+</script>
+
 <template>        
     <section class="section section-home fullscreen-md fp-auto-height-responsive" data-section="home">
         <div class="section-wrapper">
@@ -26,7 +36,7 @@
                 </div>
 
                 <div class="btns-action">
-                    <a href="https://github.com/Maus3rSR/Hajime" target="_blank">
+                    <a :href="github_url" target="_blank">
                         {{ $t("home.view") }}
                     </a>
                 </div>

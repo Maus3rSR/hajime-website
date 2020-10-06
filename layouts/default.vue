@@ -1,5 +1,13 @@
 <script>
 export default {
+    computed: {
+        github_url() {
+            return process.env.githubUrl
+        },
+        patreon_url() {
+            return process.env.patreonUrl
+        }
+    },
     methods: {
         getUri(filename) {
             return require(`../assets/images/${filename}`)
@@ -163,7 +171,7 @@ export default {
             <div class="footer-right">
                 <ul class="social">
                     <li>
-                        <a href="https://github.com/Maus3rSR/Hajime" target="_blank" title="GITHub Page">
+                        <a :href="github_url" target="_blank" title="GITHub Page">
                             <i class="icon fab fa-github"></i>
                         </a>
                     </li>
@@ -173,7 +181,7 @@ export default {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.patreon.com/hajime_software" target="_blank" title="Patreon Page">
+                        <a :href="patreon_url" target="_blank" title="Patreon Page">
                             <i class="icon fab fa-patreon"></i>
                         </a>
                     </li>
