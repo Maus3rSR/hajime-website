@@ -2,6 +2,10 @@
     "alert": {
         "development": "En développement"
     },
+    "time": {
+        "work": "de temps de travail",
+        "month": "mois | mois"
+    },
     "number": {
         "third": "3ème"
     },
@@ -72,7 +76,11 @@
         }
     },
     "support": {
-        "index": "Soutenir"
+        "index": "Soutenir",
+        "title": "Soutenir Hajime",
+        "description": "Hajime est un projet distribué sous la licence MIT et est complètement gratuit. Cependant, l'effort à fournir nécéssaire pour maintenanir et développer de nouvelles fonctionnalités pour le projet n'est pas durable sans un soutien financier adéquat. Actuellement, plus de {0} ont été investi dans ce logiciel de la part de l'auteur. Vous pouvez aider au développement de Hajime via ces méthodes :",
+        "patreon": "support récurrent",
+        "paypal": "support ponctuel"
     },
     "contact": {
         "index": "Contact",

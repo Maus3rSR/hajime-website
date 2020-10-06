@@ -2,6 +2,10 @@
     "alert": {
         "development": "In development"
     },
+    "time": {
+        "work": "of work time",
+        "month": "month | months"
+    },
     "number": {
         "third": "3rd"
     },
@@ -72,7 +76,11 @@
         }
     },
     "support": {
-        "index": "Support"
+        "index": "Support",
+        "title": "Support Hajime",
+        "description": "Hajime is an MIT licensed open-source and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. Currently, more than {0} has been invest into this software from his author. You can support Hajime development via the following methods:",
+        "patreon": "recurring pledge",
+        "paypal": "one time support"
     },
     "contact": {
         "index": "Contact",
