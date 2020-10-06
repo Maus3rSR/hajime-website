@@ -6,6 +6,9 @@ export default {
         },
         patreon_url() {
             return process.env.patreonUrl
+        },
+        discord_url() {
+            return process.env.discordUrl
         }
     },
     methods: {
@@ -176,7 +179,7 @@ export default {
                         </a>
                     </li>
                     <li>
-                        <a href="" target="_blank" title="Discord">
+                        <a :href="discord_url" target="_blank" title="Discord">
                             <i class="icon fab fa-discord"></i>
                         </a>
                     </li>

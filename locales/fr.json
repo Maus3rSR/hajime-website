@@ -84,6 +84,16 @@
     },
     "contact": {
         "index": "Contact",
-        "us": "Contactez-nous"
+        "us": "Contactez-nous",
+        "email": {
+            "title": "Par Email",
+            "description": "Des suggestions, idées ou questions ? Dites-nous ce que vous pensez d'Hajime",
+            "button": "Envoyer un email"
+        },
+        "discord": {
+            "title": "Sur Discord",
+            "description": "est un serveur de communication simple à utiliser qui permet à chacun de se parler (voix ou chat) et de collaborer sur des projets créatifs en tant que communauté",
+            "button": "Rejoindre notre communauté"
+        }
     }
 }

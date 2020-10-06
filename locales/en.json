@@ -84,6 +84,16 @@
     },
     "contact": {
         "index": "Contact",
-        "us": "Contact us"
+        "us": "Contact us",
+        "email": {
+            "title": "By Email",
+            "description": "Suggestions, ideas, questions? Please tell us what you think about Hajime",
+            "button": "Send us an email"
+        },
+        "discord": {
+            "title": "On Discord",
+            "description": "is a simple to use communications server which allows everyone to talk to each other (voice or chat) and to collaborate on creative projects as a community",
+            "button": "Join our community"
+        }
     }
 }

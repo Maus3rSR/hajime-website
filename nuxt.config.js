@@ -22,6 +22,8 @@ export default {
     env: {
         githubUrl: "https://github.com/Maus3rSR/Hajime",
         patreonUrl: "https://www.patreon.com/hajime_software",
-        paypalUrl: "https://www.paypal.com/paypalme/mausersr"
+        paypalUrl: "https://www.paypal.com/paypalme/mausersr",
+        discordUrl: "",
+        contactEmail: "kevin@haji.me"
     }
 }

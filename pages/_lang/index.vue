@@ -83,5 +83,7 @@ export default {
 
         <section-support />
 
+        <section-contact />
+
     </full-page>
 </template>
