@@ -23,7 +23,7 @@ export default {
         githubUrl: "https://github.com/Maus3rSR/Hajime",
         patreonUrl: "https://www.patreon.com/hajime_software",
         paypalUrl: "https://www.paypal.com/paypalme/mausersr",
-        discordUrl: "",
+        discordUrl: "https://discord.gg/EnhaESv",
         contactEmail: "kevin@haji.me"
     }
 }
