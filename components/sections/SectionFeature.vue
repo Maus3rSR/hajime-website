@@ -154,6 +154,51 @@
                 </div>
             </div>
 
+            <div class="slide">
+                <div class="item row justify-content-between">
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="section-content">
+
+                            <div class="media">
+                                <div class="img d-flex mr-3">
+                                    <i class="icon fas fa-wifi"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h2>{{ $t("feature.noInternet.title") }}</h2>
+                                    <p>
+                                        {{ $t("feature.noInternet.description") }}
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="section-content">
+
+                            <div class="media">
+                                <div class="img d-flex mr-3">
+                                    <i class="icon far fa-chart-bar"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h2>{{ $t("feature.statistic.title") }}</h2>
+                                    <p>
+                                        {{ $t("feature.statistic.description") }}
+                                        <span class="badge badge-warning">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            {{ $t("alert.development") }}
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 </template>

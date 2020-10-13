@@ -73,6 +73,14 @@
         "multiShiaijo": {
             "title": "Multi-shiajō",
             "description": "Connectez autant de PC qu'il n'y a de shiaijō vers la table centrale pour une gestion locale des combats"
+        },
+        "noInternet": {
+            "title": "Hors ligne",
+            "description": "Hajime peut fonctionner sans aucune connexion internet"
+        },
+        "statistic": {
+            "title": "Statistiques",
+            "description": "Analysez les données des combats"
         }
     },
     "support": {

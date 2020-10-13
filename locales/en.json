@@ -73,6 +73,14 @@
         "multiShiaijo": {
             "title": "Multi-shiajō",
             "description": "Connect as many PCs as there are shiaijō to the central table for local fight management"
+        },
+        "noInternet": {
+            "title": "Offline",
+            "description": "Hajime can work without any internet connection"
+        },
+        "statistic": {
+            "title": "Statistics",
+            "description": "Analyse data of fights"
         }
     },
     "support": {
