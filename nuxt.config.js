@@ -24,6 +24,6 @@ export default {
         patreonUrl: "https://www.patreon.com/hajime_software",
         paypalUrl: "https://www.paypal.com/paypalme/mausersr",
         discordUrl: "https://discord.gg/EnhaESv",
-        contactEmail: "kevin@haji.me"
+        contactEmail: "ku@hajime.software"
     }
 }
