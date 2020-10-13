@@ -95,5 +95,8 @@
             "description": "is a simple to use communications server which allows everyone to talk to each other (voice or chat) and to collaborate on creative projects as a community",
             "button": "Join our community"
         }
+    },
+    "footer": {
+        "withLove": "With {0} for the community"
     }
 }

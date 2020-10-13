@@ -95,5 +95,8 @@
             "description": "est un serveur de communication simple à utiliser qui permet à chacun de se parler (voix ou chat) et de collaborer sur des projets créatifs en tant que communauté",
             "button": "Rejoindre notre communauté"
         }
+    },
+    "footer": {
+        "withLove": "Avec {0} pour la communauté"
     }
 }

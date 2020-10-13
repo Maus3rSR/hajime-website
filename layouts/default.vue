@@ -168,6 +168,10 @@ export default {
                     <a href="https://www.linkedin.com/in/kevinunfricht/" target="_blank">
                         <img src="~assets/images/k.png" width="20" alt="Kevin UNFRICHT">
                     </a>
+
+                    <i18n tag="span" path="footer.withLove">
+                        <i class="fas fa-heart text-danger" />
+                    </i18n>
                 </p>
             </div>
 
