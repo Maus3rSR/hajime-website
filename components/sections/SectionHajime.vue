@@ -49,7 +49,10 @@ export default {
 
                 <div class="btns-action">
                     <a class="btn btn-white btn-round btn-full" href="#services">
-                        {{ $t("home.download") }}
+                        {{ $t("home.download") }} <br/>
+                        <i class="fab fa-windows" />
+                        <i class="fab fa-apple" />
+                        <i class="fab fa-linux" />
                     </a>
                 </div>
 
