@@ -14,6 +14,7 @@ export default {
     css: [
         '~/assets/css/full-page.min.css',
         '~/assets/css/flag-icon.min.css',
+        '~/assets/css/pageloader.css',
         '~/assets/fonts/font-awesome/font-awesome.min.css',
         '~/assets/fonts/ionicons/ionicons.min.css',
         '~/assets/fonts/bebas/stylesheet.css',

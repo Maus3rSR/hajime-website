@@ -15,6 +15,9 @@ export default {
         getUri(filename) {
             return require(`../assets/images/${filename}`)
         },
+        pageLoad() {
+            document.getElementById("page-loader").classList.add("p-hidden")
+        },
         backgroundInit() {
             let list = document.getElementsByClassName('bg-img')
             for (var i = 0; i < list.length; i++) {
@@ -63,6 +66,7 @@ export default {
         }
     },
     mounted() {
+        window.onload = this.pageLoad
         this.backgroundInit()
         this.menuInit()
     }
@@ -71,6 +75,12 @@ export default {
 
 <template>
     <div>
+        <div class="page-loader" id="page-loader">
+            <div>
+                <img width="80px" src="~assets/images/logo.png">
+            </div>
+        </div>
+
         <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
 
             <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
@@ -161,3 +171,9 @@ export default {
         </footer>
     </div>
 </template>
+
+<style lang="scss" scoped>
+.page-loader {
+    background: black;
+}
+</style>
