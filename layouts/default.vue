@@ -15,9 +15,6 @@ export default {
         getUri(filename) {
             return require(`../assets/images/${filename}`)
         },
-        pageLoad() {
-            document.getElementById("page-loader").classList.add("p-hidden")
-        },
         backgroundInit() {
             let list = document.getElementsByClassName('bg-img')
             for (var i = 0; i < list.length; i++) {
@@ -33,98 +30,18 @@ export default {
                 let src = list[i].getAttribute('data-bgcolor')
                 list[i].style.backgroundColor = src
             }
-        },
-        menuInit() {
-            let mainPage = document.getElementById("mainpage")
-            let menuIcon = document.getElementById("navMenuIcon")
-            let menuBlock = document.getElementById("navbarMenu")
-            let menuItems = [...menuBlock.getElementsByClassName("nav-link")]
-            let menuSideBar = [...document.getElementsByClassName("navbar-sidebar")]
-            let reactToMenu = [...document.getElementsByClassName("page-cover")]
-
-            // Menu icon clicked
-            menuIcon.onclick = function () {
-                menuIcon.classList.toggle('menu-visible')
-                menuIcon.firstChild.classList.toggle('menu-visible')
-                menuBlock.classList.toggle('menu-visible')
-                mainPage.classList.toggle('menu-visible')
-                menuItems.forEach(item => item.classList.toggle('menu-visible'))
-                menuSideBar.forEach(item => item.classList.toggle('menu-visible'))
-                reactToMenu.forEach(item => item.classList.toggle('menu-visible'))
-            }
-
-            // Hide menu after a menu item clicked
-            menuItems.forEach(item => item.onclick = function() {
-                menuIcon.classList.remove('menu-visible')
-                menuIcon.firstChild.classList.remove('menu-visible')
-                menuBlock.classList.remove('menu-visible')
-                mainPage.classList.remove('menu-visible')
-                menuItems.forEach(item => item.classList.remove('menu-visible'))
-                menuSideBar.forEach(item => item.classList.remove('menu-visible'))
-                reactToMenu.forEach(item => item.classList.remove('menu-visible'))
-            })
         }
     },
     mounted() {
-        window.onload = this.pageLoad
         this.backgroundInit()
-        this.menuInit()
     }
 }
 </script>
 
 <template>
     <div>
-        <div class="page-loader" id="page-loader">
-            <div>
-                <img width="80px" src="~assets/images/logo.png">
-            </div>
-        </div>
-
-        <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
-
-            <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
-                <span class="menu-icon menu-icon-random">
-                    <span class="bars">
-                    <span class="bar1"></span>
-                    <span class="bar2"></span>
-                    <span class="bar3"></span>
-                    </span>
-                </span>
-            </button>
-
-            <a class="navbar-brand" href="#">
-                <span class="logo">
-                    <img class="light-logo" src="~assets/images/logo.png" alt="Logo">
-                </span>
-            </a>
-
-            <div class="all-menu-wrapper" id="navbarMenu">
-                <!-- <nav class="navbar-topmenu">
-                    <ul class="navbar-nav navbar-nav-actions"></ul>
-                </nav> -->
-
-                <nav class="navbar-mainmenu">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="">
-                                Downloads
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Donation history</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Roadmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Release notes</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <PageLoader />
+        <Header />
 
         <div class="page-cover">
             <div class="cover-bg bg-img" :data-image-src="getUri('bg-kendo.jpg')">
@@ -171,9 +88,3 @@ export default {
         </footer>
     </div>
 </template>
-
-<style lang="scss" scoped>
-.page-loader {
-    background: black;
-}
-</style>

@@ -30,9 +30,6 @@ export default {
         fillAnchors() {
             this.options.anchors = []
             this.sectionList.forEach(section => this.options.anchors.push(section.dataset.section))
-        },
-        initAuthorSection() {
-            
         }
     },
     data: function() {
@@ -55,7 +52,11 @@ export default {
     mounted() {
         this.sectionList = [...document.getElementsByClassName('section')]
         this.fillAnchors()
-        this.initAuthorSection()
+
+        // if (document.readyState === "complete") {
+        //     this.$refs.fullpage.destroy("all")
+        //     this.$refs.fullpage.init()
+        // }
     }
 }
 </script>

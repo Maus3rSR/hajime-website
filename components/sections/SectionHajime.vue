@@ -48,12 +48,12 @@ export default {
                 </div>
 
                 <div class="btns-action">
-                    <a class="btn btn-white btn-round btn-full" href="#services">
+                    <NuxtLink :to="$i18n.path('download')" class="btn btn-white btn-round btn-full" exact>
                         {{ $t("home.download") }} <br/>
                         <i class="fab fa-windows" />
                         <i class="fab fa-apple" />
                         <i class="fab fa-linux" />
-                    </a>
+                    </NuxtLink>
                 </div>
 
                 <div class="btns-action">

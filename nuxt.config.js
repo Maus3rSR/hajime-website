@@ -2,7 +2,7 @@ export default {
     components: true,
     router: { middleware: 'i18n' },
     generate: {
-        routes: [ '/', '/fr' ]
+        routes: [ '/', '/download', '/fr', '/fr/download' ]
     },
     modules: [ 'bootstrap-vue/nuxt' ],
     bootstrapVue: { css: false, bvCSS: false },
@@ -26,6 +26,7 @@ export default {
         patreonUrl: "https://www.patreon.com/hajime_software",
         paypalUrl: "https://www.paypal.com/paypalme/mausersr",
         discordUrl: "https://discord.gg/EnhaESv",
-        contactEmail: "ku@hajime.software"
+        contactEmail: "ku@hajime.software",
+        gaCode: "UA-40325837-3"
     }
 }
