@@ -406,6 +406,14 @@
                     // letter-spacing: 0.2em;
                     // text-transform: uppercase;
                 }
+                &:after {
+                    transition: all ease 600ms;
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 1px;
+                    background: #fff;
+                }
             }
             &.active{
                 opacity: 1;
@@ -415,6 +423,10 @@
                 }
                 .txt{
                     opacity: 1;
+                    &:after {
+                        height: 3px;
+                        width: 35px;
+                    }
                 }
             }
             &:hover{
@@ -425,6 +437,10 @@
                 }
                 .txt{
                     opacity: 1;
+                    &:after {
+                        height: 3px;
+                        width: 35px;
+                    }
                 }
             }
         }
