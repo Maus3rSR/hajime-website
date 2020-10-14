@@ -4,13 +4,31 @@ export default {
         github_url() {
             return process.env.githubUrl
         }
+    },
+    mounted() {
     }
 }
 </script>
 
-<template>        
-    <section class="section section-home fullscreen-md fp-auto-height-responsive" data-section="home">
+<template>
+    <kinesis-container tag="section" class="section section-home fullscreen-md fp-auto-height-responsive" data-section="home">
         <div class="section-wrapper">
+
+            <kinesis-element class="kinesis-element" :strength="2">
+                <img src="~assets/images/ornment_left.png" class="img ornment ornment--left">
+            </kinesis-element>
+
+            <kinesis-element class="kinesis-element" :strength="-2">
+                <img src="~assets/images/ornment_right.png" class="img ornment ornment--right">
+            </kinesis-element>
+
+            <kinesis-element class="kinesis-element" :strength="-7">
+                <img src="~assets/images/kenshi_left.png" class="img kenshi kenshi--left">
+            </kinesis-element>
+
+            <kinesis-element class="kinesis-element" :strength="7">
+                <img src="~assets/images/kenshi_right.png" class="img kenshi kenshi--right">
+            </kinesis-element>
 
             <div class="section-title text-center">
                 <h1 class="title-bg">
@@ -57,5 +75,68 @@ export default {
                 </a>
             </footer>
         </div>
-    </section>
+    </kinesis-container>
 </template>
+
+<style lang="scss" scoped>
+
+$offsetInitial: -100%;
+$kenshiOffset: -15%;
+$ornmentOffset: 0;
+
+.kinesis-element {
+    position: relative;
+    z-index: -1;
+}
+
+.section {
+    .kenshi {
+        transition: all ease-out 1000ms;
+        position: absolute;
+        width: 50vw;
+        height: auto;
+        margin-top: -10%;
+
+        &.kenshi--left {
+            left: $offsetInitial;
+        }
+
+        &.kenshi--right {
+            right: $offsetInitial;
+        }
+    }
+    
+    .ornment {
+        transition: all ease 2000ms;
+        position: absolute;
+        width: 20vw;
+        height: auto;
+        margin-top: -10%;
+        opacity: 0;
+
+        &.ornment--left {
+            left: $ornmentOffset;
+        }
+
+        &.ornment--right {
+            right: $ornmentOffset;
+        }
+    }
+
+    &.active {
+        .kenshi {
+            &.kenshi--left {
+                left: $kenshiOffset;
+            }
+
+            &.kenshi--right {
+                right: $kenshiOffset;
+            }
+        }
+
+        .ornment {
+            opacity: 100%;
+        }
+    }
+}
+</style>

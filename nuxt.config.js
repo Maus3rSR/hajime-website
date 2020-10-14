@@ -9,6 +9,7 @@ export default {
     plugins: [
         '~/plugins/i18n.js',
         { src:'~/plugins/fullPage.js', ssr: false },
+        { src:'~/plugins/kinesis.js', ssr: false },
     ],
     css: [
         '~/assets/css/full-page.min.css',
