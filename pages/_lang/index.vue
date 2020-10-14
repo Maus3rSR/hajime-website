@@ -1,6 +1,6 @@
 <script>
 export default {
-    head: {
+   head: {
         title: "Hajime - Kendo competition software management",
         meta: [
             { charset: "utf-8" },
@@ -61,29 +61,67 @@ export default {
 </script>
 
 <template>
-    <full-page
-        id="fullpage"
-        ref="fullpage"
+    <div>
+        <div class="page-header-alpha">
+            <nav class="navbar-sidebar">
+                <ul class="navbar-nav" id="qmenu">
+                    <li class="nav-item" data-menuanchor="home">
+                        <a href="#home">
+                            <span class="txt">Hajime</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="about">
+                        <a href="#about">
+                            <span class="txt">{{ $t("about.index") }}</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="feature">
+                        <a href="#feature">
+                            <span class="txt">{{ $t("feature.index") }}</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="author">
+                        <a href="#author">
+                            <span class="txt">{{ $t("author.index") }}</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="support">
+                        <a href="#support">
+                            <span class="txt">{{ $t("support.index") }} Hajime</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" data-menuanchor="contact">
+                        <a href="#contact">
+                            <span class="txt">{{ $t("contact.index") }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         
-        :options="options"
-    >
-        
-        <section-hajime
-            @on-section-next="nextSection()"
-        />
+        <full-page
+            id="fullpage"
+            ref="fullpage"
+            
+            :options="options"
+        >
+            <section-hajime
+                @on-section-next="nextSection()"
+            />
 
-        <section-about />
+            <section-about />
 
-        <section-feature />
+            <section-feature />
 
-        <section-author
-            @on-slide-previous="previousSlide()"
-            @on-slide-next="nextSlide()"
-        />
+            <section-author
+                @on-slide-previous="previousSlide()"
+                @on-slide-next="nextSlide()"
+            />
 
-        <section-support />
+            <section-support />
 
-        <section-contact />
+            <section-contact />
 
-    </full-page>
+        </full-page>
+    </div>
 </template>
