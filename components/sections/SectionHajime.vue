@@ -82,8 +82,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
-$offsetInitial: -100%;
+$offsetMarginTop: -15vh;
+$offsetInitial: -200%;
 $kenshiOffset: -15%;
 $ornmentOffset: 0;
 
@@ -98,7 +98,7 @@ $ornmentOffset: 0;
         position: absolute;
         width: 50vw;
         height: auto;
-        margin-top: -10%;
+        margin-top: $offsetMarginTop;
 
         &.kenshi--left {
             left: $offsetInitial;
@@ -114,7 +114,7 @@ $ornmentOffset: 0;
         position: absolute;
         width: 20vw;
         height: auto;
-        margin-top: -10%;
+        margin-top: $offsetMarginTop;
         opacity: 0;
 
         &.ornment--left {
@@ -139,6 +139,87 @@ $ornmentOffset: 0;
 
         .ornment {
             opacity: 100%;
+        }
+    }
+
+    @media (max-width: 1045px) {
+        $kenshiOffset: 0;
+        $ornmentOffset: 15%;
+
+        .ornment {
+            &.ornment--left {
+                left: $ornmentOffset;
+            }
+
+            &.ornment--right {
+                right: $ornmentOffset;
+            }
+        }
+
+        &.active {
+            .kenshi {
+                &.kenshi--left {
+                    left: $kenshiOffset;
+                }
+
+                &.kenshi--right {
+                    right: $kenshiOffset;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1400px) and (max-width: 1599px) {
+        $kenshiOffset: -30%;
+        $ornmentOffset: -15%;
+
+        .ornment {
+            &.ornment--left {
+                left: $ornmentOffset;
+            }
+
+            &.ornment--right {
+                right: $ornmentOffset;
+            }
+        }
+
+        &.active {
+            .kenshi {
+                &.kenshi--left {
+                    left: $kenshiOffset;
+                }
+
+                &.kenshi--right {
+                    right: $kenshiOffset;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 2100px) {
+        $kenshiOffset: -30%;
+        $ornmentOffset: -15%;
+
+        .ornment {
+            &.ornment--left {
+                left: $ornmentOffset;
+            }
+
+            &.ornment--right {
+                right: $ornmentOffset;
+            }
+        }
+
+        &.active {
+            .kenshi {
+                &.kenshi--left {
+                    left: $kenshiOffset;
+                }
+
+                &.kenshi--right {
+                    right: $kenshiOffset;
+                }
+            }
         }
     }
 }
