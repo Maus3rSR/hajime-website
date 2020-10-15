@@ -16,6 +16,13 @@ export default {
                         <div class="wrapper">
                             <h1>{{ $t("download.title") }}</h1>
 
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <i18n tag="span" path="download.warning">
+                                    <b>PRE-ALPHA</b>
+                                </i18n>
+                            </div>
+
                             <h2>Windows</h2>
 
                             <div class="item row mt-4">

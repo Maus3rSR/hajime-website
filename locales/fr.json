@@ -105,7 +105,8 @@
         }
     },
     "download": {
-        "title": "Téléchargements"
+        "title": "Téléchargements",
+        "warning": "Gardez en tête que cette version est une {0} et est donc loin de sa forme souhaitée. Soyez donc indulgent et constructif lors de vos retours."
     },
     "donation": {
         "title": "Suivi des dons"

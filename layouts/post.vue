@@ -91,6 +91,7 @@ export default {
 .social {
     display: flex;
     padding: 0;
+    font-size: 1.5rem;
 
     li {
         padding-right: 15px;
