@@ -104,6 +104,12 @@
             "button": "Join our community"
         }
     },
+    "download": {
+        "title": "Downloads"
+    },
+    "donation": {
+        "title": "Donations tracking"
+    },
     "footer": {
         "withLove": "With {0} for the community"
     }

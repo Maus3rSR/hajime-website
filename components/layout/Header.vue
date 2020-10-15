@@ -64,14 +64,20 @@ export default {
 
             <nav class="navbar-mainmenu">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">
-                            Downloads
-                            <span class="sr-only">(current)</span>
-                        </a>
+                    <li class="nav-item">
+                        <NuxtLink :to="$i18n.path('')" class="nav-link" exact>
+                            Hajime
+                        </NuxtLink>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Donation history</a>
+                        <NuxtLink :to="$i18n.path('download')" class="nav-link" exact>
+                            {{ $t("download.title") }}
+                        </NuxtLink>
+                    </li>
+                    <li class="nav-item">
+                        <NuxtLink :to="$i18n.path('donation')" class="nav-link" exact>
+                            {{ $t("donation.title") }}
+                        </NuxtLink>
                     </li>
                 </ul>
             </nav>

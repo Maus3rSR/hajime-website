@@ -104,6 +104,12 @@
             "button": "Rejoindre notre communauté"
         }
     },
+    "download": {
+        "title": "Téléchargements"
+    },
+    "donation": {
+        "title": "Suivi des dons"
+    },
     "footer": {
         "withLove": "Avec {0} pour la communauté"
     }
