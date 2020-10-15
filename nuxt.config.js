@@ -4,7 +4,7 @@ export default {
     generate: {
         routes: [ '/', '/download', '/fr', '/fr/download' ]
     },
-    modules: [ 'bootstrap-vue/nuxt' ],
+    modules: [ 'bootstrap-vue/nuxt', '@nuxt/content' ],
     bootstrapVue: { css: false, bvCSS: false },
     plugins: [
         '~/plugins/i18n.js',

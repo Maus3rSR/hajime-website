@@ -109,7 +109,16 @@
         "warning": "Gardez en tête que cette version est une {0} et est donc loin de sa forme souhaitée. Soyez donc indulgent et constructif lors de vos retours."
     },
     "donation": {
-        "title": "Suivi des dons"
+        "title": "Suivi des dons",
+        "balance": "Balance en cours",
+        "thank": "Merci à tous pour votre précieux support, vous êtes géniaux !",
+        "table": {
+            "amount": "Montant",
+            "from": "De",
+            "date": "Date",
+            "reason": "Raison"
+        },
+        "pledge": "don mensuel"
     },
     "footer": {
         "withLove": "Avec {0} pour la communauté"

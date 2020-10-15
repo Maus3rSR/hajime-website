@@ -27,7 +27,7 @@ export default {
                 </div>
             </div>
 
-            <div class="btns-action text-center">
+            <div class="btns-action text-center mb-3">
                 <a :href="patreon_url" target="_blank" class="btn btn-white btn-round btn-full">
                     <i class="fab fa-patreon"></i> Patreon ({{ $t("support.patreon") }})
                 </a>
@@ -35,6 +35,12 @@ export default {
                 <a :href="paypal_url" target="_blank" class="btn btn-round btn-full">
                     <i class="fab fa-paypal"></i> Paypal ({{ $t("support.paypal") }})
                 </a>
+            </div>
+
+            <div class="btns-action text-center">
+                <NuxtLink :to="$i18n.path('donation')" exact>
+                    {{ $t("donation.title") }}
+                </NuxtLink>
             </div>
         </div>
     </section>
