@@ -20,6 +20,14 @@ export default {
             this.rightContent.style.right = null
         }
     },
+    computed: {
+        author_url() {
+            return process.env.authorUrl
+        },
+        malt_url() {
+            return process.env.maltUrl
+        }
+    },
     data() {
         return {
             sectionContent: null,
@@ -81,12 +89,12 @@ export default {
 
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.linkedin.com/in/kevinunfricht/" target="_blank">
+                                <a class="nav-link" :href="author_url" target="_blank">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.malt.fr/profile/kevinunfricht/" target="_blank">
+                                <a class="nav-link" :href="malt_url" target="_blank">
                                     MALT
                                 </a>
                             </li>

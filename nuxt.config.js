@@ -26,6 +26,8 @@ export default {
         patreonUrl: "https://www.patreon.com/hajime_software",
         paypalUrl: "https://www.paypal.com/paypalme/mausersr",
         discordUrl: "https://discord.gg/EnhaESv",
+        authorUrl: "https://www.linkedin.com/in/kevinunfricht",
+        maltUrl: "https://www.malt.fr/profile/kevinunfricht",
         contactEmail: "ku@hajime.software",
         gaCode: "UA-40325837-3"
     }

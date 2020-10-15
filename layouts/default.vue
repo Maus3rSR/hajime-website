@@ -1,5 +1,15 @@
 <script>
 export default {
+   head: {
+        meta: [
+            { charset: "utf-8" },
+            { name: "viewport", content: "width=device-width, initial-scale=1" },
+        ],
+        // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        bodyAttrs: {
+            class: "body-page body-item"
+        }
+    },
     computed: {
         github_url() {
             return process.env.githubUrl
@@ -9,6 +19,9 @@ export default {
         },
         discord_url() {
             return process.env.discordUrl
+        },
+        author_url() {
+            return process.env.authorUrl
         }
     },
     methods: {
@@ -56,7 +69,7 @@ export default {
         <footer id="site-footer" class="page-footer">
             <div class="footer-left">
                 <p>
-                    <a href="https://www.linkedin.com/in/kevinunfricht/" target="_blank">
+                    <a :href="author_url" target="_blank">
                         <img src="~assets/images/k.png" width="20" alt="Kevin UNFRICHT">
                     </a>
 
