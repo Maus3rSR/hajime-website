@@ -52,11 +52,6 @@ export default {
     mounted() {
         this.sectionList = [...document.getElementsByClassName('section')]
         this.fillAnchors()
-
-        // if (document.readyState === "complete") {
-        //     this.$refs.fullpage.destroy("all")
-        //     this.$refs.fullpage.init()
-        // }
     }
 }
 </script>
