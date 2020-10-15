@@ -38,7 +38,7 @@ export default {
                 <div class="section-cover-tier mask-black">
                     <div class="cover-content">
                         <div class="title-desc">
-                            <span class="display-4 display-title mb-5">Hajime</span>
+                            <span class="display-4 display-title">Hajime</span>
                             <footer>
                                 <ul class="social">
                                     <li>
@@ -82,8 +82,18 @@ export default {
 
 <style lang="scss" scoped>
 .section-cover-tier {
-    background: url('~assets/images/bg-kendo.jpg');
+    z-index: 1;
+    background: url('~assets/images/bg-kendo-2.jpg');
     background-size: cover;
     background-position: center;
+}
+
+.social {
+    display: flex;
+    padding: 0;
+
+    li {
+        padding-right: 15px;
+    }
 }
 </style>
