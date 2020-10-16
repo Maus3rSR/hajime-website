@@ -22,13 +22,16 @@ export default {
         '~/assets/sass/main.scss',
     ],
     env: {
+        contactEmail: "ku@hajime.software",
         githubUrl: "https://github.com/Maus3rSR/Hajime",
         patreonUrl: "https://www.patreon.com/hajime_software",
         paypalUrl: "https://www.paypal.com/paypalme/mausersr",
         discordUrl: "https://discord.gg/EnhaESv",
         authorUrl: "https://www.linkedin.com/in/kevinunfricht",
         maltUrl: "https://www.malt.fr/profile/kevinunfricht",
-        contactEmail: "ku@hajime.software"
+        downloadLatestReleaseLink: "https://github.com/Maus3rSR/Hajime/releases/latest/download/",
+        oldReleaseUrl:"https://github.com/Maus3rSR/Hajime/releases",
+        softwareVersion: "0.1.0"
     },
     bootstrapVue: { css: false, bvCSS: false },
     googleAnalytics: {

@@ -106,7 +106,8 @@
     },
     "download": {
         "title": "Téléchargements",
-        "warning": "Gardez en tête que cette version est une {0} et est donc loin de sa forme souhaitée. Soyez donc indulgent et constructif lors de vos retours."
+        "warning": "Gardez en tête que cette version est une {0} et est donc loin de sa forme souhaitée. Soyez donc indulgent et constructif lors de vos retours.",
+        "oldVersion": "Clickez ici pour les anciennes versions"
     },
     "donation": {
         "title": "Suivi des dons",
