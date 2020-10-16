@@ -107,6 +107,7 @@
     "download": {
         "title": "Downloads",
         "warning": "Keep in mind that this version is only a {0} and it's not the final version yet. Be kind and constructive with your feedbacks.",
+        "warning2": "Hajime has no signed certification as certifications are chargeable and we do not have enough funds for that. That is why your PC will tell you to not install an untrusted application. You can ignore it.",
         "oldVersion": "Click here for older versions"
     },
     "donation": {

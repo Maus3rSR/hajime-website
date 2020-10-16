@@ -45,6 +45,11 @@ export default {
                         </i18n>
                     </div>
 
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        {{ $t("download.warning2") }}
+                    </div>
+
                     <div class="row mt-4">
                         <div class="col-12 col-sm-3">
                             <a class="btn btn-outline-primary btn-round" @click="trackEvent('Windows')" :href="windows_download_link">
