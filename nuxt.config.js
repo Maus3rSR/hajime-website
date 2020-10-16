@@ -5,7 +5,7 @@ export default {
         routes: [ '/', '/download', '/fr', '/fr/download' ]
     },
     modules: [ 'bootstrap-vue/nuxt', '@nuxt/content' ],
-    bootstrapVue: { css: false, bvCSS: false },
+    buildModules: [ '@nuxtjs/google-analytics' ],
     plugins: [
         '~/plugins/i18n.js',
         { src:'~/plugins/fullPage.js', ssr: false },
@@ -28,7 +28,15 @@ export default {
         discordUrl: "https://discord.gg/EnhaESv",
         authorUrl: "https://www.linkedin.com/in/kevinunfricht",
         maltUrl: "https://www.malt.fr/profile/kevinunfricht",
-        contactEmail: "ku@hajime.software",
-        gaCode: "UA-40325837-3"
-    }
+        contactEmail: "ku@hajime.software"
+    },
+    bootstrapVue: { css: false, bvCSS: false },
+    googleAnalytics: {
+        id: "UA-40325837-3",
+        debug: {
+            enabled: true,
+            trace: true,
+            sendHitTask: false
+        }
+    },
 }

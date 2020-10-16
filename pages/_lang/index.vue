@@ -25,6 +25,10 @@ export default {
         fillAnchors() {
             this.options.anchors = []
             this.sectionList.forEach(section => this.options.anchors.push(section.dataset.section))
+        },
+        afterSectionLoad(event) {
+            if (event.anchor === null || event.anchor === "home") return
+            this.$ga.screenview(event.anchor)
         }
     },
     data: function() {
@@ -41,6 +45,7 @@ export default {
 				responsiveWidth: 601,
                 responsiveHeight: 480,
                 anchors: [],
+                afterLoad: this.afterSectionLoad
             },
         }
     },

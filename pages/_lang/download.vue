@@ -1,6 +1,11 @@
 <script>
 export default {
-    layout: 'post'
+    layout: 'post',
+    methods: {
+        trackEvent(label) {
+            this.$ga.event('Download', 'Click', label)
+        }
+    }
 }
 </script>
 
@@ -28,7 +33,7 @@ export default {
                             <div class="item row mt-4">
                                 <div class="col-12 col-sm-3">
                                     <div class="section-content">
-                                        <a class="btn btn-outline-primary btn-round" href="#link">
+                                        <a class="btn btn-outline-primary btn-round" @click="trackEvent('Windows 32Bits')" href="#link">
                                             <i class="fab fa-windows" />
                                             32 Bits
                                         </a>
@@ -37,7 +42,7 @@ export default {
 
                                 <div class="col-12 col-sm-3">
                                     <div class="section-content">
-                                        <a class="btn btn-outline-primary btn-round" href="#link">
+                                        <a class="btn btn-outline-primary btn-round" @click="trackEvent('Windows 64Bits')" href="#link">
                                             <i class="fab fa-windows" />
                                             64 Bits
                                         </a>
@@ -50,7 +55,7 @@ export default {
                             <div class="item row mt-4">
                                 <div class="col-12 col-sm-3">
                                     <div class="section-content">
-                                        <a class="btn btn-outline-primary btn-round" href="#link">
+                                        <a class="btn btn-outline-primary btn-round" @click="trackEvent('MacOsx')" href="#link">
                                             <i class="fab fa-apple" />
                                             Mac OSX
                                         </a>
@@ -63,7 +68,7 @@ export default {
                             <div class="item row mt-4">
                                 <div class="col-12 col-sm-3">
                                     <div class="section-content">
-                                        <a class="btn btn-outline-primary btn-round" href="#link">
+                                        <a class="btn btn-outline-primary btn-round" @click="trackEvent('Linux')" href="#link">
                                             <i class="fab fa-linux" />
                                             Linux
                                         </a>
