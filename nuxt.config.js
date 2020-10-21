@@ -31,7 +31,7 @@ export default {
         maltUrl: "https://www.malt.fr/profile/kevinunfricht",
         downloadLatestReleaseLink: "https://github.com/Maus3rSR/Hajime/releases/latest/download/",
         oldReleaseUrl:"https://github.com/Maus3rSR/Hajime/releases",
-        softwareVersion: "0.1.0"
+        softwareVersion: "0.1.0-prealpha"
     },
     bootstrapVue: { css: false, bvCSS: false },
     googleAnalytics: {
