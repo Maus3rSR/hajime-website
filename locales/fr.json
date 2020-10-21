@@ -106,7 +106,7 @@
     },
     "download": {
         "title": "Téléchargements",
-        "warning": "Gardez en tête que cette version est une {0} et est donc loin de sa forme souhaitée. Soyez donc indulgent et constructif lors de vos retours.",
+        "warning": "Gardez en tête que cette version est une {0} et est donc loin de sa forme souhaitée, toutes les fonctionnalités ne sont pas implémentées. Soyez donc indulgent et constructif lors de vos retours.",
         "warning2": "Hajime n'a pas de certification signée car les certifications sont payantes et nous n'avons pas assez de fonds pour cela. C'est pourquoi votre PC vous dira de ne pas installer une application non approuvée. Vous pouvez l'ignorer.",
         "oldVersion": "Clickez ici pour les anciennes versions"
     },
