@@ -1,4 +1,4 @@
-const githubPageConfiguration = process.env.DEPLOY_ENV === 'GH_PAGES' ? { 
+const githubPageConfiguration = process.env.NODE_ENV === 'production' ? { 
     router: { base: '/hajime-website/' },
 } : {}
 
