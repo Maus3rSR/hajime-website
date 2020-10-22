@@ -1,9 +1,16 @@
 <script>
 export default {
    head: {
+        title: "Hajime - Kendo competition software management",
+
         meta: [
             { charset: "utf-8" },
             { name: "viewport", content: "width=device-width, initial-scale=1" },
+            {
+                hid: "description",
+                name: "description",
+                content: "Hajime is a software to help organizers to speed up Kendo competition management and focus to what is really matters: the Kendo event",
+            }
         ],
         // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
         bodyAttrs: {
