@@ -1,4 +1,128 @@
 {
-
+    "alert": {
+        "development": "In development"
+    },
+    "time": {
+        "work": "of work time",
+        "month": "month | months"
+    },
+    "number": {
+        "third": "3rd"
+    },
+    "home": {
+        "subtitle": "Managing competitions never been so easy",
+        "download": "Download for free",
+        "view": "View the project on Github"
+    },
+    "about": {
+        "index": "About",
+        "subtitle": "Focus on what really matters",
+        "description": {
+            "index": "You deserve to be able to offer the best organization quality. Hajime help you to {0} manual tasks like lot drawing, score distribution, scoreboards display... And saves you time allowing you to focus on the most important: {1}",
+            "optimize": "optimize and automatize",
+            "event": "the event"
+        }
+    },
+    "author": {
+        "index": "Author",
+        "button": "But also...",
+        "developer": "Web Dev",
+        "description": {
+            "index": "Over {0}, I want to use all my expertise to bring to {1} the best experience for the international Kendo community.",
+            "experience": "7 years professional experience"
+        },
+        "description-kendo": {
+            "kenshi": "Kenshi evolving within the Haku-Un-Kan in Metz (France), my attendance during various competitions allowed me to understand such events organization challenges.",
+            "experience": "These experiences collected on the spot will make {0} a software well adapted to competitions organizational constraints."
+        }
+    },
+    "feature": {
+        "index": "Features",
+        "alert": {
+            "tree": "Elimination tree @.lower:alert.development",
+            "pool": "Only pool export available"
+        },
+        "competitionFormula": {
+            "title": "Competition formula",
+            "description": "Choose your competition formula : pool, elimination tree, or both"
+        },
+        "fighterImport": {
+            "title": "Fighter import",
+            "description": "Speed up workflow by massively import fighters with a simple CSV file"
+        },
+        "i18n": {
+            "title": "Multilingual",
+            "description": "{0} and {1} are available. If you want to help translate or translate into your language: {2}"
+        },
+        "team": {
+            "title": "Team",
+            "description": "In addition to the individual mode, you can create teams with a fixed number of fighters which also includes substitutes management"
+        },
+        "scoreBoard": {
+            "title": "Score board",
+            "description": "Display live combat scoreboard onto another screen"
+        },
+        "pdf": {
+            "title": "PDF export",
+            "description": "Export pools, elimination tree, scoreboards, to then print or archive them"
+        },
+        "draw": {
+            "title": "Drawing lot",
+            "description": "Automatic draws, with the possibility of repulsing favorites and repulsing clubs"
+        },
+        "multiShiaijo": {
+            "title": "Multi-shiajō",
+            "description": "Connect as many PCs as there are shiaijō to the central table for local fight management"
+        },
+        "noInternet": {
+            "title": "Offline",
+            "description": "Hajime can work without any internet connection"
+        },
+        "statistic": {
+            "title": "Statistics",
+            "description": "Analyse data of fights"
+        }
+    },
+    "support": {
+        "index": "Support",
+        "title": "Support Hajime",
+        "description": "Hajime is an MIT licensed open-source and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. Currently, more than {0} has been invest into this software from his author. You can support Hajime development via the following methods:",
+        "patreon": "recurring pledge",
+        "paypal": "one time support"
+    },
+    "contact": {
+        "index": "Contact",
+        "us": "Contact us",
+        "email": {
+            "title": "By Email",
+            "description": "Suggestions, ideas, questions? Please tell us what you think about Hajime",
+            "button": "Send us an email"
+        },
+        "discord": {
+            "title": "On Discord",
+            "description": "is a simple to use communications server which allows everyone to talk to each other (voice or chat) and to collaborate on creative projects as a community",
+            "button": "Join our community"
+        }
+    },
+    "download": {
+        "title": "Downloads",
+        "warning": "Keep in mind that this version is only a {0} and it's not the final version and all features are not implemented yet. Be kind and constructive with your feedbacks.",
+        "warning2": "Hajime has no signed certification as certifications are chargeable and we do not have enough funds for that. That is why your PC will tell you to not install an untrusted application. You can ignore it.",
+        "oldVersion": "Click here for older versions"
+    },
+    "donation": {
+        "title": "Donations tracking",
+        "balance": "Current balance",
+        "thank": "Thank you for all your support, your are awesome!",
+        "table": {
+            "amount": "Amount",
+            "from": "From",
+            "date": "Date",
+            "reason": "Reason"
+        },
+        "pledge": "monthly pledge"
+    },
+    "footer": {
+        "withLove": "With {0} for the community"
+    }
 }
-  

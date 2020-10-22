@@ -4,8 +4,12 @@
 @import "mixins";
 
 /* 0. Base style */
+// Bootstrap
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
+// Flag icon
+@import "~flag-icon-css/sass/flag-icon.scss";
+@import 'style-default.scss';
 
 /* 0.1 Initializer */
 @import "init/print";

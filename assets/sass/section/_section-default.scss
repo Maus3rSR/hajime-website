@@ -51,7 +51,7 @@
     &:after{
         @media (max-height: 480px) {
             content: "";
-            background: rgba(white,0.1);
+            // background: rgba(white,0.1);
             top: 0;
             left: 0;
             width: 100%;
@@ -185,6 +185,16 @@
 }
 .fp-scrollable{
     // display: flex;
+}
+
+.section {
+    .fp-slidesNav {
+        text-align: center;
+    
+        &.fp-bottom {
+            bottom: 50px;
+        }
+    }
 }
 
 @import 'section-title';

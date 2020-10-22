@@ -1,8 +1,12 @@
 
 @import "variables";
 
+html {
+    overflow: hidden;
+}
+
 // $black : #3d3d3d;
-$black : #4d4d4d;
+$black : #1d1d1d;
 $color1 : #f8204b;
 // white background and black text : overwrite black and white colors
 a{
@@ -71,5 +75,16 @@ a{
         top: 0;
         bottom: 0;
         opacity: 0.7;
+    }
+}
+
+.display-title {
+    position: relative;
+
+    > .badge {
+        position: absolute;
+        font-size: .8rem;
+        rotate: 15deg;
+        margin-left: -35px;
     }
 }

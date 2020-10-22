@@ -1,4 +1,128 @@
 {
-    
+    "alert": {
+        "development": "En développement"
+    },
+    "time": {
+        "work": "de temps de travail",
+        "month": "mois | mois"
+    },
+    "number": {
+        "third": "3ème"
+    },
+    "home": {
+        "subtitle": "Gérer les compétitions n'a jamais été aussi simple",
+        "download": "Télécharger gratuitement",
+        "view": "Voir le projet sur Github"
+    },
+    "about": {
+        "index": "À propos",
+        "subtitle": "Concentrez-vous sur ce qui compte vraiment",
+        "description": {
+            "index": "Vous méritez de pouvoir offrir une organisation de qualité. Hajime vous aide à {0} certaines tâches faites manuellement comme le tirage au sort, la distribution des points, l'affichage des tableaux de marques... Et vous permet de gagner du temps vous permettant de vous concentrer sur le plus important : {1}",
+            "optimize": "optimiser et automatiser",
+            "event": "l'évènementiel"
+        }
+    },
+    "author": {
+        "index": "Auteur",
+        "button": "Mais aussi...",
+        "developer": "Développeur Web",
+        "description": {
+            "index": "Avec plus de {0}, je souhaite mettre à profit toute mon expertise pour offrir à {1} la meilleure expérience possible à la communauté de Kendo internationale",
+            "experience": "+7 ans d'expériences professionnelles"
+        },
+        "description-kendo": {
+            "kenshi": "Kenshi évoluant au sein du Haku-Un-Kan à Metz, ma présence lors de différentes compétitions m'ont permis de bien comprendre les enjeux de l'organisation de tels évènements.",
+            "experience": "Ces expériences recueillies sur le terrain permettront de faire de {0} un logiciel sur-mesure adapté aux contraintes organisationnelles des compétitions."
+        }
+    },
+    "feature": {
+        "index": "Fonctionnalités",
+        "alert": {
+            "tree": "Arbre éliminatoire @.lower:alert.development",
+            "pool": "Uniquement export poule disponible"
+        },
+        "competitionFormula": {
+            "title": "Formule de compétition",
+            "description": "Choisissez votre type de compétition : poule, arbre éliminatoire, ou les deux"
+        },
+        "fighterImport": {
+            "title": "Import combattant",
+            "description": "Importez massivement la liste des combattants en un clin d'oeil avec un simple fichier CSV"
+        },
+        "i18n": {
+            "title": "Multilingue",
+            "description": "{0} et {1} disponible. Si vous voulez aider à la traduction ou traduire dans votre langue : {2}"
+        },
+        "team": {
+            "title": "Équipe",
+            "description": "En plus du mode individuel, vous pouvez former des équipes avec un nombre de combattants fixe qui inclu également la gestion des remplaçants"
+        },
+        "scoreBoard": {
+            "title": "Tableau de marque",
+            "description": "Affichez un tableau des scores du combat en temps réel sur un autre écran"
+        },
+        "pdf": {
+            "title": "Export PDF",
+            "description": "Exportez dans un fichier PDF la liste des poules, le tableau éliminatoire, les tableaux de marque, pour ensuite les imprimer ou les archiver"
+        },
+        "draw": {
+            "title": "Tirage au sort",
+            "description": "Tirages au sort automatique, avec possibilité d'écart de favoris et écart de clubs"
+        },
+        "multiShiaijo": {
+            "title": "Multi-shiajō",
+            "description": "Connectez autant de PC qu'il n'y a de shiaijō vers la table centrale pour une gestion locale des combats"
+        },
+        "noInternet": {
+            "title": "Hors ligne",
+            "description": "Hajime peut fonctionner sans aucune connexion internet"
+        },
+        "statistic": {
+            "title": "Statistiques",
+            "description": "Analysez les données des combats"
+        }
+    },
+    "support": {
+        "index": "Soutenir",
+        "title": "Soutenir Hajime",
+        "description": "Hajime est un projet distribué sous la licence MIT et est complètement gratuit. Cependant, l'effort à fournir nécéssaire pour maintenanir et développer de nouvelles fonctionnalités pour le projet n'est pas durable sans un soutien financier adéquat. Actuellement, plus de {0} ont été investi dans ce logiciel de la part de l'auteur. Vous pouvez aider au développement de Hajime via ces méthodes :",
+        "patreon": "support récurrent",
+        "paypal": "support ponctuel"
+    },
+    "contact": {
+        "index": "Contact",
+        "us": "Contactez-nous",
+        "email": {
+            "title": "Par Email",
+            "description": "Des suggestions, idées ou questions ? Dites-nous ce que vous pensez d'Hajime",
+            "button": "Envoyer un email"
+        },
+        "discord": {
+            "title": "Sur Discord",
+            "description": "est un serveur de communication simple à utiliser qui permet à chacun de se parler (voix ou chat) et de collaborer sur des projets créatifs en tant que communauté",
+            "button": "Rejoindre notre communauté"
+        }
+    },
+    "download": {
+        "title": "Téléchargements",
+        "warning": "Gardez en tête que cette version est une {0} et est donc loin de sa forme souhaitée, toutes les fonctionnalités ne sont pas implémentées. Soyez donc indulgent et constructif lors de vos retours.",
+        "warning2": "Hajime n'a pas de certification signée car les certifications sont payantes et nous n'avons pas assez de fonds pour cela. C'est pourquoi votre PC vous dira de ne pas installer une application non approuvée. Vous pouvez l'ignorer.",
+        "oldVersion": "Clickez ici pour les anciennes versions"
+    },
+    "donation": {
+        "title": "Suivi des dons",
+        "balance": "Balance en cours",
+        "thank": "Merci à tous pour votre précieux support, vous êtes géniaux !",
+        "table": {
+            "amount": "Montant",
+            "from": "De",
+            "date": "Date",
+            "reason": "Raison"
+        },
+        "pledge": "don mensuel"
+    },
+    "footer": {
+        "withLove": "Avec {0} pour la communauté"
+    }
 }
-  

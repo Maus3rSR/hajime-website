@@ -324,17 +324,17 @@
         }
         .nav-item {
             transition: 0.3s;
-            @media (min-width: $medium-up) {
-                line-height: 1;
-                font-size: $text-xxxlarge;
-            }
-            @media (min-width: $large-up) {
-                line-height: 0.8;
-                font-size: $text-xxxxlarge;
-            }
-            @media (min-width: $medium-up) and (max-height: 480px) {
-                font-size: $text-xxlarge;
-            }
+            // @media (min-width: $medium-up) {
+            //     line-height: 1;
+            //     font-size: $text-xxxlarge;
+            // }
+            // @media (min-width: $large-up) {
+            //     line-height: 0.8;
+            //     font-size: $text-xxxxlarge;
+            // }
+            // @media (min-width: $medium-up) and (max-height: 480px) {
+            //     font-size: $text-xxlarge;
+            // }
             a {
                 color: white;
                 transition: 0.3s;
@@ -367,6 +367,7 @@
             left: 64px;
             transform: translateY(-50%);
             display: none;
+            z-index: 1;
         }
         @media (min-width: $xlarge-up) {
             display: block;
@@ -374,6 +375,7 @@
             top: 50%;
             left: 64px;
             transform: translateY(-50%);
+            z-index: 1;
         }
         .nav-item{
             opacity: 0.5;
@@ -404,6 +406,14 @@
                     // letter-spacing: 0.2em;
                     // text-transform: uppercase;
                 }
+                &:after {
+                    transition: all ease 600ms;
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 1px;
+                    background: #fff;
+                }
             }
             &.active{
                 opacity: 1;
@@ -413,6 +423,10 @@
                 }
                 .txt{
                     opacity: 1;
+                    &:after {
+                        height: 3px;
+                        width: 35px;
+                    }
                 }
             }
             &:hover{
@@ -423,6 +437,10 @@
                 }
                 .txt{
                     opacity: 1;
+                    &:after {
+                        height: 3px;
+                        width: 35px;
+                    }
                 }
             }
         }

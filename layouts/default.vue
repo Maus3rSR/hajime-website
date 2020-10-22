@@ -1,104 +1,71 @@
+<script>
+export default {
+   head: {
+        title: "Hajime - Kendo competition software management",
+
+        meta: [
+            { charset: "utf-8" },
+            { name: "viewport", content: "width=device-width, initial-scale=1" },
+            {
+                hid: "description",
+                name: "description",
+                content: "Hajime is a software to help organizers to speed up Kendo competition management and focus to what is really matters: the Kendo event",
+            }
+        ],
+        // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        bodyAttrs: {
+            class: "body-page body-item"
+        }
+    },
+    computed: {
+        github_url() {
+            return process.env.githubUrl
+        },
+        patreon_url() {
+            return process.env.patreonUrl
+        },
+        discord_url() {
+            return process.env.discordUrl
+        },
+        author_url() {
+            return process.env.authorUrl
+        }
+    },
+    methods: {
+        getUri(filename) {
+            return require(`../assets/images/${filename}`)
+        },
+        backgroundInit() {
+            let list = document.getElementsByClassName('bg-img')
+            for (var i = 0; i < list.length; i++) {
+                var src = list[i].getAttribute('data-image-src')
+                list[i].style.backgroundImage = "url('" + src + "')"
+                list[i].style.backgroundRepeat = "no-repeat"
+                list[i].style.backgroundPosition = "center"
+                list[i].style.backgroundSize = "cover"
+            }
+
+            list = document.getElementsByClassName('bg-color')
+            for (let i = 0; i < list.length; i++) {
+                let src = list[i].getAttribute('data-bgcolor')
+                list[i].style.backgroundColor = src
+            }
+        }
+    },
+    mounted() {
+        this.backgroundInit()
+    }
+}
+</script>
+
 <template>
     <div>
-        <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
-
-            <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
-                <span class="menu-icon menu-icon-random">
-                    <span class="bars">
-                    <span class="bar1"></span>
-                    <span class="bar2"></span>
-                    <span class="bar3"></span>
-                    </span>
-                </span>
-            </button>
-
-            <a class="navbar-brand" href="#">
-                <span class="logo">
-                    <img class="light-logo" src="~assets/images/logo.png" alt="Logo">
-                </span>
-
-                <span class="text">
-                    <span class="line">Simpleux</span>
-                    <span class="line sub">Portfolio Template</span>
-                </span>
-            </a>
-
-            <div class="all-menu-wrapper" id="navbarMenu">
-                <nav class="navbar-topmenu">
-                    <ul class="navbar-nav navbar-nav-actions">
-                    <li class="nav-item">
-                        <a class="btn btn-outline-white btn-round" target="_blank" href="https://themeforest.net/item/simpleux-beautiful-creative-website-template-for-agency-business-and-portfolio/20863111">
-                        Buy Now
-                        </a>
-                    </li>
-                    </ul>
-                </nav>
-
-                <nav class="navbar-mainmenu">
-                    <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html#home">Home
-                        <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./item.html">Item</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./demo.html">Demo</a>
-                    </li>
-                    </ul>
-                </nav>
-
-                <nav class="navbar-sidebar ">
-                    <ul class="navbar-nav" id="qmenu">
-                    <li class="nav-item" data-menuanchor="home">
-                        <a href="#home">
-                        <i class="icon ion-ios-home-outline"></i>
-                        <span class="txt">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="about">
-                        <a href="#about">
-                        <i class="icon ion-ios-information-outline"></i>
-                        <span class="txt">About</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="services">
-                        <a href="#services">
-                        <i class="icon ion-ios-list-outline"></i>
-                        <span class="txt">Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="projects">
-                        <a href="#projects">
-                        <i class="icon ion-ios-albums-outline"></i>
-                        <span class="txt">Projects</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="register">
-                        <a href="#register">
-                        <i class="icon ion-ios-compose-outline"></i>
-                        <span class="txt">Register</span>
-                        </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="contact">
-                        <a href="#contact">
-                        <i class="icon ion-ios-telephone-outline"></i>
-                        <span class="txt">Contact</span>
-                        </a>
-                    </li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header>
+        <PageLoader />
+        <Header />
 
         <div class="page-cover">
-            <div class="cover-bg bg-img" data-image-src="img/bg-default1.jpg"></div>
+            <div class="cover-bg bg-img" :data-image-src="getUri('bg-kendo.jpg')">
+            </div>
             <div class="cover-bg-mask bg-color" data-bgcolor="rgba(2, 3, 10, 0.7)"></div>
         </div>
 
@@ -108,33 +75,32 @@
 
         <footer id="site-footer" class="page-footer">
             <div class="footer-left">
-                <p>PORTFOLIO BY
-                    <a href="http://highhay.com">
-                    <span class="marked">BRAND</span>
+                <p>
+                    <a :href="author_url" target="_blank">
+                        <img src="~assets/images/k.png" width="20" alt="Kevin UNFRICHT">
                     </a>
+
+                    <i18n tag="span" path="footer.withLove">
+                        <i class="fas fa-heart text-danger" />
+                    </i18n>
                 </p>
             </div>
 
             <div class="footer-right">
                 <ul class="social">
                     <li>
-                        <a href="">
-                            <i class="icon fa fa-facebook"></i>
+                        <a :href="github_url" target="_blank" title="GITHub Page">
+                            <i class="icon fab fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <i class="icon fa fa-twitter"></i>
+                        <a :href="discord_url" target="_blank" title="Discord">
+                            <i class="icon fab fa-discord"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <i class="icon fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="icon fa fa-instagram"></i>
+                        <a :href="patreon_url" target="_blank" title="Patreon Page">
+                            <i class="icon fab fa-patreon"></i>
                         </a>
                     </li>
                 </ul>
