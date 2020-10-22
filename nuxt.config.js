@@ -1,4 +1,7 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? { router: { base: '/hajime.github.io/' } } : {}
+
 export default {
+    ...routerBase,
     components: true,
     router: { middleware: 'i18n' },
     generate: {
