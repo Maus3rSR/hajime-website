@@ -21,7 +21,7 @@ jobs:
       - name: Generate static website 🔧
         run: |
           yarn install
-          yarn generate:gh-pages
+          yarn generate
 
       - name: Build & Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
