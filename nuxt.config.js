@@ -1,11 +1,12 @@
-const githubPageConfiguration = process.env.NODE_ENV === 'production' ? { 
-    router: { base: '/hajime-website/' },
-} : {}
+const isProduction = process.env.NODE_ENV === 'production'
 
 export default {
     ...githubPageConfiguration,
     components: true,
-    router: { middleware: 'i18n' },
+    router: {
+        ...isProduction && { base: '/hajime-website/' },
+        middleware: 'i18n',
+    },
     generate: {
         routes: [ '/', '/download', '/fr', '/fr/download' ]
     },
