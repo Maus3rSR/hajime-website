@@ -1,7 +1,6 @@
 const isProduction = process.env.NODE_ENV === 'production'
 
 export default {
-    ...githubPageConfiguration,
     components: true,
     router: {
         ...isProduction && { base: '/hajime-website/' },
