@@ -17,7 +17,7 @@ export default {
 <template>
     <div class="page-loader" id="page-loader">
         <div>
-            <img width="300px" src="~assets/images/logo.png">
+            <img width="150px" src="~assets/images/logo.png">
         </div>
     </div>
 </template>
