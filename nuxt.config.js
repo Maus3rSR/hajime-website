@@ -21,7 +21,7 @@ export default {
         '~/assets/sass/main.scss',
     ],
     env: {
-        contactEmail: "ku@hajime.software",
+        contactEmail: "hey@hajime.software",
         githubUrl: "https://github.com/Maus3rSR/Hajime",
         patreonUrl: "https://www.patreon.com/hajime_software",
         paypalUrl: "https://www.paypal.com/paypalme/mausersr",
