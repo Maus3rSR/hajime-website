@@ -1,6 +1,5 @@
 const githubPageConfiguration = process.env.DEPLOY_ENV === 'GH_PAGES' ? { 
     router: { base: '/hajime-website/' },
-    target: 'static'
 } : {}
 
 export default {
