@@ -13,8 +13,13 @@ jobs:
       - name: Check out project 🛎️
         uses: actions/checkout@v2
 
-      - name: Install and build 🔧
-        uses: kappa0923/nuxtjs-generate-action@v0.1.0
+      - name: Install dependancies 🔧
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+        run: |
+          yarn install
+          yarn generate
 
       - name: Build & release app 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
