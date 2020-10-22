@@ -115,7 +115,7 @@ $ornmentOffset: 0;
         width: 20vw;
         height: auto;
         margin-top: $offsetMarginTop;
-        opacity: 0;
+        // opacity: 0%;
 
         &.ornment--left {
             left: $ornmentOffset;
@@ -137,9 +137,10 @@ $ornmentOffset: 0;
             }
         }
 
-        .ornment {
-            opacity: 100%;
-        }
+        // Animation problem with nuxt generate... it stuck at 10% not 100%
+        // .ornment {
+        //     opacity: 100%;
+        // }
     }
 
     @media (max-width: 1045px) {
