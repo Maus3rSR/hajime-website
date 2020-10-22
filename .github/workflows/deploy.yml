@@ -1,0 +1,25 @@
+name: Build & Deploy on Github Pages
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out project 🛎️
+        uses: actions/checkout@v2
+
+      - name: Install and build 🔧
+        uses: kappa0923/nuxtjs-generate-action@v0.1.0
+
+      - name: Build & release app 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          github_token: ${{ secrets.github_token }}
+          branch: gh-pages
+          folder: dist
+          clean: true
