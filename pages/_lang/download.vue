@@ -36,7 +36,10 @@ export default {
         <div class="col-12 col-md-8">
             <div class="section-content scrollable">
                 <div class="wrapper">
-                    <h1>{{ $t("download.title") }}</h1>
+                    <h1>
+                        {{ $t("download.title") }}
+                        ({{ software_version }})
+                    </h1>
 
                     <div class="alert alert-warning">
                         <i class="fas fa-exclamation-triangle"></i>
