@@ -3,7 +3,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 export default {
     components: true,
     router: {
-        ...isProduction && { base: '/hajime-website/' },
+        // ...isProduction && { base: '/hajime-website/' }, // Not necessary if custom domain is enabled
         middleware: 'i18n',
     },
     generate: {
