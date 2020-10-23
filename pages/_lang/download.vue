@@ -18,7 +18,7 @@ export default {
             return `${this.download_link}hajime-${this.software_version}-mac.zip`
         },
         linux_download_link() {
-            return `${this.download_link}hajime-${this.software_version}.dmg`
+            return `${this.download_link}hajime-${this.software_version}.AppImage`
         },
     },
     methods: {
