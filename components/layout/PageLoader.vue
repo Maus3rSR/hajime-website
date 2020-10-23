@@ -17,13 +17,13 @@ export default {
 <template>
     <div class="page-loader" id="page-loader">
         <div>
-            <img width="150px" src="~assets/images/logo.png">
+            <img width="150px" src="~assets/images/logo_red.png">
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .page-loader {
-    background: black;
+    background: #25263A;
 }
 </style>
