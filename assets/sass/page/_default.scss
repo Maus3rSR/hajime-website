@@ -3,6 +3,12 @@
     min-height: 100%;
 }
 
+@media (max-width: 767px) {
+    .page-main {
+        margin-bottom: 60px;
+    }
+}
+
 .body-page{
     background-color: $black;
     color: $white;
