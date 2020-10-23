@@ -3,6 +3,7 @@ export default {
     methods: {
         pageLoad() {
             document.getElementById("page-loader").classList.add("p-hidden")
+            document.body.classList.add("loaded")
         }
     },
     mounted() {
@@ -25,5 +26,15 @@ export default {
 <style lang="scss" scoped>
 .page-loader {
     background: #25263A;
+}
+</style>
+
+<style lang="scss">
+body {
+    overflow: hidden;
+
+    &.loaded {
+        overflow: auto;
+    }
 }
 </style>
