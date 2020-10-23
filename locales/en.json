@@ -18,7 +18,7 @@
         "index": "About",
         "subtitle": "Focus on what really matters",
         "description": {
-            "index": "You deserve to be able to offer the best organization quality. Hajime help you to {0} manual tasks like lot drawing, score distribution, scoreboards display... And saves you time allowing you to focus on the most important: {1}",
+            "index": "You deserve to be able to offer the best organization quality. Hajime helps you to {0} manual tasks like lot drawing, score distribution, scoreboards display... And saves you time allowing you to focus on the most important: {1}",
             "optimize": "optimize and automatize",
             "event": "the event"
         }
@@ -28,7 +28,7 @@
         "button": "But also...",
         "developer": "Web Dev",
         "description": {
-            "index": "Over {0}, I want to use all my expertise to bring to {1} the best experience for the international Kendo community.",
+            "index": "Over {0}, I want to use all my expertise to bring {1} the best experience for the international Kendo community.",
             "experience": "7 years professional experience"
         },
         "description-kendo": {
@@ -52,7 +52,7 @@
         },
         "i18n": {
             "title": "Multilingual",
-            "description": "{0} and {1} are available. If you want to help translate or translate into your language: {2}"
+            "description": "{0} and {1} are available. If you want to help for the translation or translate into your language: {2}"
         },
         "team": {
             "title": "Team",
@@ -86,7 +86,7 @@
     "support": {
         "index": "Support",
         "title": "Support Hajime",
-        "description": "Hajime is an MIT licensed open-source and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. Currently, more than {0} has been invest into this software from his author. You can support Hajime development via the following methods:",
+        "description": "Hajime is an MIT licensed open-source and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. Currently, more than {0} has been invested into this software from his author. You can support Hajime development via the following methods:",
         "patreon": "recurring pledge",
         "paypal": "one time support"
     },
@@ -95,7 +95,7 @@
         "us": "Contact us",
         "email": {
             "title": "By Email",
-            "description": "Suggestions, ideas, questions? Please tell us what you think about Hajime",
+            "description": "Suggestions, ideas, questions? Please tell us what do you think about Hajime",
             "button": "Send us an email"
         },
         "discord": {

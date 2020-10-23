@@ -18,7 +18,7 @@
         "index": "À propos",
         "subtitle": "Concentrez-vous sur ce qui compte vraiment",
         "description": {
-            "index": "Vous méritez de pouvoir offrir une organisation de qualité. Hajime vous aide à {0} certaines tâches faites manuellement comme le tirage au sort, la distribution des points, l'affichage des tableaux de marques... Et vous permet de gagner du temps vous permettant de vous concentrer sur le plus important : {1}",
+            "index": "Vous méritez de pouvoir offrir une organisation de qualité. Hajime vous aide à {0} certaines tâches faites manuellement comme le tirage au sort, la distribution des points, l'affichage des tableaux de marques... Et vous permet de gagner du temps et ainsi de vous concentrer sur le plus important : {1}",
             "optimize": "optimiser et automatiser",
             "event": "l'évènementiel"
         }
@@ -29,7 +29,7 @@
         "developer": "Développeur Web",
         "description": {
             "index": "Avec plus de {0}, je souhaite mettre à profit toute mon expertise pour offrir à {1} la meilleure expérience possible à la communauté de Kendo internationale",
-            "experience": "+7 ans d'expériences professionnelles"
+            "experience": "7 ans d'expériences professionnelles"
         },
         "description-kendo": {
             "kenshi": "Kenshi évoluant au sein du Haku-Un-Kan à Metz, ma présence lors de différentes compétitions m'ont permis de bien comprendre les enjeux de l'organisation de tels évènements.",
@@ -56,7 +56,7 @@
         },
         "team": {
             "title": "Équipe",
-            "description": "En plus du mode individuel, vous pouvez former des équipes avec un nombre de combattants fixe qui inclu également la gestion des remplaçants"
+            "description": "En plus du mode individuel, vous pouvez former des équipes avec un nombre de combattants fixe qui inclut également la gestion des remplaçants"
         },
         "scoreBoard": {
             "title": "Tableau de marque",
@@ -86,7 +86,7 @@
     "support": {
         "index": "Soutenir",
         "title": "Soutenir Hajime",
-        "description": "Hajime est un projet distribué sous la licence MIT et est complètement gratuit. Cependant, l'effort à fournir nécéssaire pour maintenanir et développer de nouvelles fonctionnalités pour le projet n'est pas durable sans un soutien financier adéquat. Actuellement, plus de {0} ont été investi dans ce logiciel de la part de l'auteur. Vous pouvez aider au développement de Hajime via ces méthodes :",
+        "description": "Hajime est un projet distribué sous la licence MIT et est complètement gratuit. Cependant, l'effort à fournir nécéssaire pour maintenanir et développer de nouvelles fonctionnalités pour le projet n'est pas durable sans un soutien financier adéquat. Actuellement, plus de {0} ont été investies dans ce logiciel de la part de l'auteur. Vous pouvez aider au développement de Hajime via ces méthodes :",
         "patreon": "support récurrent",
         "paypal": "support ponctuel"
     },
@@ -113,7 +113,7 @@
     "donation": {
         "title": "Suivi des dons",
         "balance": "Balance en cours",
-        "thank": "Merci à tous pour votre précieux support, vous êtes géniaux !",
+        "thank": "Merci à tous pour votre précieux soutien, vous êtes géniaux !",
         "table": {
             "amount": "Montant",
             "from": "De",
