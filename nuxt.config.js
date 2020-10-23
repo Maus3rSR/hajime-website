@@ -3,7 +3,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 export default {
     components: true,
     router: {
-        ...isProduction && { base: '/hajime-website/' },
+        // ...isProduction && { base: '/hajime-website/' }, // Not necessary if custom domain is enabled
         middleware: 'i18n',
     },
     generate: {
@@ -40,10 +40,12 @@ export default {
     bootstrapVue: { css: false, bvCSS: false },
     googleAnalytics: {
         id: "UA-40325837-3",
-        debug: {
-            enabled: true,
-            trace: true,
-            sendHitTask: false
+        ...!isProduction && {
+            debug: {
+                enabled: true,
+                trace: true,
+                sendHitTask: false
+            }
         }
     },
 }

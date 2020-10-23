@@ -12,7 +12,7 @@ export default {
                 content: "Hajime is a software to help organizers to speed up Kendo competition management and focus to what is really matters: the Kendo event",
             }
         ],
-        // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
         bodyAttrs: {
             class: "body-page body-item"
         }
