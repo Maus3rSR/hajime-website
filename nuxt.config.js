@@ -40,10 +40,12 @@ export default {
     bootstrapVue: { css: false, bvCSS: false },
     googleAnalytics: {
         id: "UA-40325837-3",
-        debug: {
-            enabled: true,
-            trace: true,
-            sendHitTask: false
+        ...!isProduction && {
+            debug: {
+                enabled: true,
+                trace: true,
+                sendHitTask: false
+            }
         }
     },
 }
