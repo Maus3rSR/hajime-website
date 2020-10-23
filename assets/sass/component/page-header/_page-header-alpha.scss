@@ -361,6 +361,8 @@
     }
     // sidebar menu
     .navbar-sidebar{
+        display: none;
+
         @media (min-width: $medium-up) {
             position: fixed;
             top: 50%;
@@ -490,4 +492,3 @@
         }
     }
 }
-
