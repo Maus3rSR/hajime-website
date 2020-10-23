@@ -6,6 +6,12 @@ export default {
         },
         paypal_url() {
             return process.env.paypalUrl
+        },
+        hours_invested() {
+            return process.env.hoursInvested
+        },
+        months_invested() {
+            return process.env.monthsInvested
         }
     },
     methods: {
@@ -28,7 +34,7 @@ export default {
                     {{ $t("support.title") }}
                 </h2>
                 <div class="title-desc anim-3">
-                    {{ $t("support.description", [`600h (~4 ${$tc("time.month", 4)} ${$t("time.work")})`]) }}
+                    {{ $t("support.description", [`${hours_invested}h (~${months_invested} ${$tc("time.month", months_invested)} ${$t("time.work")})`]) }}
                 </div>
             </div>
 
