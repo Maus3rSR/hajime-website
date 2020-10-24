@@ -57,7 +57,7 @@ export default {
                             <div class="images text-center">
                                 <div class="img-frame-legend-alpha">
 
-                                    <img src="~assets/images/author-dev.png" alt="Kevin UNFRICHT" class="img img-responsive">
+                                    <img src="~assets/images/author/dev.png" alt="Kevin UNFRICHT" class="img img-responsive">
 
                                     <div class="legend">
                                         <h2 class="display-4">
@@ -134,7 +134,7 @@ export default {
                             <div class="images text-center">
                                 <div class="img-frame-legend-alpha">
 
-                                    <img src="~assets/images/author-kendo.png" alt="Kevin UNFRICHT" class="img img-responsive">
+                                    <img src="~assets/images/author/kendo.png" alt="Kevin UNFRICHT" class="img img-responsive">
 
                                     <div class="legend">
                                         <h2 class="display-4">
