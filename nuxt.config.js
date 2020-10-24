@@ -9,7 +9,7 @@ export default {
     generate: {
         routes: [ '/', '/download', '/fr', '/fr/download' ]
     },
-    modules: [ 'bootstrap-vue/nuxt', '@nuxt/content' ],
+    modules: [ 'bootstrap-vue/nuxt', '@nuxt/content', '@nuxtjs/robots', '@nuxtjs/sitemap' ], // /!\ Alwas put sitemap at the end of the array
     buildModules: [ '@nuxtjs/google-analytics' ],
     plugins: [
         '~/plugins/i18n.js',
@@ -51,4 +51,15 @@ export default {
             }
         }
     },
+    sitemap: {
+        hostname: "https://www.hajime.software/",
+        path: '/sitemap.xml',
+        cacheTime: 1000 * 60 * 60 * 2,
+        trailingSlash: true,
+        gzip: true
+    },
+    robots: {
+        UserAgent: '*',
+        Disallow: '/'
+    }
 }
