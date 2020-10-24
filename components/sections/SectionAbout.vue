@@ -6,7 +6,7 @@ export default {
                 'fighter_list',
                 'pool_list',
                 'ranking_detail',
-                'pool_list',
+                'fight_list',
                 'fight_board',
             ]
         }
