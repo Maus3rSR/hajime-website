@@ -15,19 +15,19 @@ export default {
         <div class="section-wrapper">
 
             <kinesis-element class="kinesis-element" :strength="2">
-                <img src="~assets/images/ornment_left.png" class="img ornment ornment--left">
+                <img src="~assets/images/main_section/ornment_left.png" class="img ornment ornment--left">
             </kinesis-element>
 
             <kinesis-element class="kinesis-element" :strength="-2">
-                <img src="~assets/images/ornment_right.png" class="img ornment ornment--right">
+                <img src="~assets/images/main_section/ornment_right.png" class="img ornment ornment--right">
             </kinesis-element>
 
             <kinesis-element class="kinesis-element" :strength="-7">
-                <img src="~assets/images/kenshi_left.png" class="img kenshi kenshi--left">
+                <img src="~assets/images/main_section/kenshi_left.png" class="img kenshi kenshi--left">
             </kinesis-element>
 
             <kinesis-element class="kinesis-element" :strength="7">
-                <img src="~assets/images/kenshi_right.png" class="img kenshi kenshi--right">
+                <img src="~assets/images/main_section/kenshi_right.png" class="img kenshi kenshi--right">
             </kinesis-element>
 
             <div class="section-title text-center">
