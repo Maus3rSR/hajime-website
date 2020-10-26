@@ -4,8 +4,6 @@ export default {
         github_url() {
             return process.env.githubUrl
         }
-    },
-    mounted() {
     }
 }
 </script>
@@ -15,11 +13,11 @@ export default {
         <div class="section-wrapper">
 
             <kinesis-element class="kinesis-element" :strength="2">
-                <img src="~assets/images/main_section/ornment_left.png" class="img ornment ornment--left">
+                <img src="~assets/images/main_section/ornment_white.png" class="img ornment ornment--right">
             </kinesis-element>
 
             <kinesis-element class="kinesis-element" :strength="-2">
-                <img src="~assets/images/main_section/ornment_right.png" class="img ornment ornment--right">
+                <img src="~assets/images/main_section/ornment_red.png" class="img ornment ornment--left">
             </kinesis-element>
 
             <kinesis-element class="kinesis-element" :strength="-7">
@@ -30,18 +28,12 @@ export default {
                 <img src="~assets/images/main_section/kenshi_right.png" class="img kenshi kenshi--right">
             </kinesis-element>
 
-            <div class="section-title text-center">
-                <h1 class="title-bg">
-                    Hajime
-                </h1>
-            </div>
-
             <div class="section-content anim">
                 <div class="title-desc">
-                    <h2 class="display-4 display-title anim-1">
+                    <h1 class="display-4 display-title anim-1">
                         Hajime
                         <span class="badge badge-warning">pre-alpha</span>
-                    </h2>
+                    </h1>
                     <h3 class="anim-2">
                         {{ $t("home.subtitle") }}
                     </h3>
