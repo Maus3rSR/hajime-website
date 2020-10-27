@@ -52,25 +52,23 @@ export default {
         <div class="slide">
             <div class="section-wrapper twoside center-vh dir-col">
                 <div class="item row justify-content-between">
-                    <div class="col-12 col-sm-6 center-vh">
+                    <div class="col-12 col-sm-4 center-vh">
                         <div class="section-content anim translateUp">
                             <div class="images text-center">
-                                <div class="img-frame-legend-alpha">
-
-                                    <img src="~assets/images/author/dev.png" alt="Kevin UNFRICHT" class="img img-responsive">
-
-                                    <div class="legend">
-                                        <h2 class="display-4">
-                                            <strong>{{ $t("author.developer") }}</strong>
-                                        </h2>
-                                        <p>Kevin UNFRICHT</p>
+                                <div class="img-avatar-alpha">
+                                    <div class="img-1 shadow">
+                                        <img class="img" src="~assets/images/author/dev.jpg" alt="Kevin UNFRICHT">
+                                    </div>
+                                    <div class="legend text-center pos-abs">
+                                        <h2>Kevin UNFRICHT</h2>
+                                        <p class="small">{{ $t("author.developer") }}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-7 col-md-6">
+                    <div class="col-12 col-md-8">
                         <div class="section-content anim">
                             <div class="title-desc">
                                 <i18n tag="p" path="author.description.index">
@@ -79,24 +77,17 @@ export default {
                                 </i18n>
                             </div>
                         </div>
-
+                        <a class="btn btn-outline btn-primary btn-round" :href="author_url" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            Linkedin
+                        </a>
+                        <a class="btn btn-outline btn-primary btn-round" :href="malt_url" target="_blank">
+                            MALT
+                        </a>
                         <a class="btn btn-transp-arrow btn-outline btn-primary btn-round" @click="$emit('on-slide-next')">
                             <span class="icon arrow-right"></span>
                             <span class="text">{{ $t("author.button") }}</span>
                         </a>
-
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" :href="author_url" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" :href="malt_url" target="_blank">
-                                    MALT
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -105,7 +96,7 @@ export default {
         <div class="slide">
             <div class="section-wrapper twoside center-vh dir-col">
                 <div class="item row justify-content-between">
-                    <div class="col-12 col-sm-5 col-md-6">
+                    <div class="col-12 col-md-8">
                         <div class="section-content anim">
                             <div class="title-desc">
                                 <p>{{ $t("author.description-kendo.kenshi") }}</p>
@@ -120,27 +111,21 @@ export default {
                             <span class="text">{{ $t("author.button") }}</span>
                         </a>
 
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="https://www.budokai-metz.fr/kendo/" target="_blank">
-                                    Budokaï Metz Haku-Un-Kan
-                                </a>
-                            </li>
-                        </ul>
+                        <a class="btn btn-outline btn-primary btn-round" href="https://www.budokai-metz.fr/kendo/" target="_blank">
+                            Budokaï Metz Haku-Un-Kan
+                        </a>
                     </div>
 
-                    <div class="col-12 col-sm-6 center-vh">
+                    <div class="col-12 col-sm-4 center-vh">
                         <div class="section-content anim translateUp">
                             <div class="images text-center">
-                                <div class="img-frame-legend-alpha">
-
-                                    <img src="~assets/images/author/kendo.png" alt="Kevin UNFRICHT" class="img img-responsive">
-
-                                    <div class="legend">
-                                        <h2 class="display-4">
-                                            <strong>Kenshi</strong>
-                                        </h2>
-                                        <p>{{ $t("number.third") }} DAN</p>
+                                <div class="img-avatar-alpha">
+                                    <div class="img-1 shadow">
+                                        <img class="img" src="~assets/images/author/kendo.jpg" alt="Kevin UNFRICHT">
+                                    </div>
+                                    <div class="legend text-center pos-abs">
+                                        <h2>Kenshi</h2>
+                                        <p class="small"><p>{{ $t("number.third") }} DAN</p>
                                     </div>
                                 </div>
                             </div>
