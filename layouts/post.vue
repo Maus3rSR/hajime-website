@@ -44,7 +44,7 @@ export default {
                 <div class="section-cover-tier mask-black">
                     <div class="cover-content">
                         <div class="title-desc">
-                            <span class="display-4 display-title">Hajime</span>
+                            <!-- <span class="display-4 display-title">Hajime</span> -->
                             <footer>
                                 <ul class="social">
                                     <li>
@@ -63,16 +63,6 @@ export default {
                                         </a>
                                     </li>
                                 </ul>
-
-                                <p>
-                                    <a :href="author_url" target="_blank">
-                                        <img src="~assets/images/k.png" width="20" alt="Kevin UNFRICHT">
-                                    </a>
-
-                                    <i18n tag="span" path="footer.withLove">
-                                        <i class="fas fa-heart text-danger" />
-                                    </i18n>
-                                </p>
                             </footer>
                         </div>
                     </div>

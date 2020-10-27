@@ -1,5 +1,10 @@
 <script>
 export default {
+    methods: {
+        refreshCarousel() {
+            this.$nextTick(() => window.dispatchEvent(new Event('resize')))
+        }
+    },
     data() {
         return {
             screenshotList: [
@@ -32,11 +37,12 @@ export default {
                         </i18n>
                     </div>
 
-                    <div class="col-8 software-preview-col" v-b-modal.modal-preview-software>
+                    <div class="col-8 software-preview-col m-auto" v-b-modal.modal-preview-software>
                         <img class="img img-fluid" src="~assets/images/about/pc_mockup.png" alt="Software preview">
-                        <div id="see-more-preview">
-                            <p class="display-5">{{ $t("about.see-more") }}</p>
-                            <img class="arrow" src="~assets/images/about/arrow.svg" alt="Arrow">
+
+                        <div class="btn btn-round" v-b-modal.modal-preview-software>
+                            <i class="fas fa-images"></i>
+                            {{ $t("about.see-more") }}
                         </div>
                     </div>
                 </div>
@@ -49,6 +55,8 @@ export default {
             header-bg-variant="dark"
             body-bg-variant="dark"
             title="Preview"
+
+            @shown="refreshCarousel"
         >
             <carousel
                 :per-page="1"
@@ -67,41 +75,10 @@ export default {
 
 <style lang="scss" scoped>
 .software-preview-col {
-    &:hover {
-        #see-more-preview {
-            p {
-                &:after {
-                    width: 80px;
-                }
-            }
-        }
-    }
-}
-
-#see-more-preview {
-    position: absolute;
-    right: -180px;
-    top: 0px;   
-
-    p {
-        margin: 0;
-
-        &:after {
-            content: "";
-            display: block;
-            position: relative;
-            top: -10px;
-            height: 3px;
-            width: 0;
-            background: #fff;
-            transition: all 500ms ease;
-        }
-    }
-
-    img {
-        width: 80px;
-        margin-top: -10px;
-        margin-left: -50px;
+    .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
 </style>

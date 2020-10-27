@@ -27,7 +27,7 @@
     "author": {
         "index": "Author",
         "button": "But also...",
-        "developer": "Web Dev",
+        "developer": "Web Developer",
         "description": {
             "index": "Over {0}, I want to use all my expertise to bring {1} the best experience for the international Kendo community.",
             "experience": "7 years professional experience"

@@ -6,9 +6,11 @@ $black : #1d1d1d;
 $color1 : #f8204b;
 // white background and black text : overwrite black and white colors
 a{
-    color: $color1;
+    &:not(.btn) {
+        color: $white;
+    }
     &:hover{
-        color: transparentize($color1, 0.2)
+        color: transparentize($white, 0.2)
     }
 }
 
