@@ -25,11 +25,12 @@ export default {
                 clearInterval(this.loopSlideInterval)
                 this.loopSlideInterval = null
             }
-        }
+        },
+        
     },
     data: function() {
         return {
-            interval: 3000,
+            interval: 6000,
             loopSlideInterval: null,
             sectionList: [],
             options: {
@@ -105,7 +106,7 @@ export default {
 
             <section-about />
 
-            <section-feature />
+            <section-feature @on-hover="" />
 
             <section-author
                 @on-slide-previous="previousSlide()"
