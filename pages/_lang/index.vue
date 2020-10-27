@@ -14,13 +14,23 @@ export default {
             this.options.anchors = []
             this.sectionList.forEach(section => this.options.anchors.push(section.dataset.section))
         },
-        afterSectionLoad(event) {
-            if (event.anchor === null || event.anchor === "home") return
-            this.$ga.screenview(event.anchor)
+        afterSectionLoad(origin, destination) {
+
+            if (destination.anchor !== null && destination.anchor !== "home")
+                this.$ga.screenview(destination.anchor)
+
+            if (destination.anchor === "feature" && this.loopSlideInterval === null)
+                this.loopSlideInterval = setInterval(() => this.$refs.fullpage.api.moveSlideRight(), this.interval)
+            else {
+                clearInterval(this.loopSlideInterval)
+                this.loopSlideInterval = null
+            }
         }
     },
     data: function() {
         return {
+            interval: 3000,
+            loopSlideInterval: null,
             sectionList: [],
             options: {
                 licenseKey: "800D1B93-C2C74D36-8E0392D6-8365BDFF",
