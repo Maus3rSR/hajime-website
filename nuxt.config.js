@@ -43,6 +43,9 @@ export default {
     bootstrapVue: { css: false, bvCSS: false },
     googleAnalytics: {
         id: "UA-40325837-3",
+        autoTracking: {
+            skipSamePath: true
+        },
         ...!isProduction && {
             debug: {
                 enabled: true,
