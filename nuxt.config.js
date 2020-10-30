@@ -9,7 +9,13 @@ export default {
     generate: {
         routes: [ '/', '/download', '/fr', '/fr/download' ]
     },
-    modules: [ 'bootstrap-vue/nuxt', '@nuxt/content', '@nuxtjs/robots', '@nuxtjs/sitemap' ], // /!\ Alwas put sitemap at the end of the array
+    modules: [
+        'bootstrap-vue/nuxt',
+        '@nuxtjs/axios',
+        '@nuxt/content',
+        '@nuxtjs/robots',
+        '@nuxtjs/sitemap' // /!\ Alwas put sitemap at the end of the array
+    ],
     buildModules: [ '@nuxtjs/google-analytics' ],
     plugins: [
         '~/plugins/i18n.js',
@@ -34,8 +40,8 @@ export default {
         discordUrl: "https://discord.gg/EnhaESv",
         authorUrl: "https://www.linkedin.com/in/kevinunfricht",
         maltUrl: "https://www.malt.fr/profile/kevinunfricht",
-        downloadLatestReleaseLink: "https://github.com/Maus3rSR/Hajime/releases/latest/download/",
-        oldReleaseUrl:"https://github.com/Maus3rSR/Hajime/releases",
+        latestReleaseApiUrl: "https://api.github.com/repos/Maus3rSR/Hajime/releases/latest",
+        releaseUrl:"https://github.com/Maus3rSR/Hajime/releases",
         softwareVersion: "0.1.1-prealpha",
         hoursInvested: 700,
         monthsInvested: 5

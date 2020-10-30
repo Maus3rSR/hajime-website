@@ -5,26 +5,42 @@ export default {
         software_version() {
             return process.env.softwareVersion
         },
-        old_release_link() {
-            return process.env.oldReleaseUrl
+        release_link() {
+            return process.env.releaseUrl
         },
-        download_link() {
-            return process.env.downloadLatestReleaseLink
-        },
-        windows_download_link() {
-            return `${this.download_link}hajime-Setup-${this.software_version}.exe`
-        },
-        mac_download_link() {
-            return `${this.download_link}hajime-${this.software_version}-mac.zip`
-        },
-        linux_download_link() {
-            return `${this.download_link}hajime-${this.software_version}.AppImage`
-        },
+        latest_release_api_url() {
+            return process.env.latestReleaseApiUrl
+        }
     },
     methods: {
         trackEvent(label) {
             this.$ga.event('Download', 'Click', label)
         },
+    },
+    data() {
+        return {
+            releaseMap: {
+                "windows_download_link": ".exe",
+                "mac_download_link": ".dmg",
+                "linux_download_link": ".AppImage",
+            },
+            windows_download_link: null,
+            mac_download_link: null,
+            linux_download_link: null,
+        }
+    },
+    async mounted() {
+        const latest_release = (await this.$axios.get(this.latest_release_api_url)).data
+        
+        latest_release.assets.forEach(asset => {
+            for (let os_link in this.releaseMap) {
+                if (this[os_link] !== null) continue
+                if (!asset.name.includes(this.releaseMap[os_link])) continue
+                    
+                this[os_link] = asset.browser_download_url
+                break
+            }
+        })
     }
 }
 </script>
@@ -55,21 +71,21 @@ export default {
 
                     <div class="row mt-4">
                         <div class="col-12 col-sm-3">
-                            <a class="btn btn-outline-primary btn-round" @click="trackEvent('Windows')" :href="windows_download_link">
+                            <a v-if="windows_download_link !== null" class="btn btn-outline-primary btn-round" @click="trackEvent('Windows')" :href="windows_download_link">
                                 <i class="fab fa-windows" />
                                 Windows
                             </a>
                         </div>
                         
                         <div class="col-12 col-sm-3">
-                            <a class="btn btn-outline-primary btn-round" @click="trackEvent('MacOsx')" :href="mac_download_link">
+                            <a v-if="mac_download_link !== null" class="btn btn-outline-primary btn-round" @click="trackEvent('MacOsx')" :href="mac_download_link">
                                 <i class="fab fa-apple" />
                                 Mac OSX
                             </a>
                         </div>
 
                         <div class="col-12 col-sm-3">
-                            <a class="btn btn-outline-primary btn-round" @click="trackEvent('Linux')" :href="linux_download_link">
+                            <a v-if="linux_download_link !== null" class="btn btn-outline-primary btn-round" @click="trackEvent('Linux')" :href="linux_download_link">
                                 <i class="fab fa-linux" />
                                 Linux
                             </a>
@@ -78,7 +94,7 @@ export default {
 
                     <div class="row mt-4">
                         <div class="col-12">
-                            <a :href="old_release_link" target="_blank">
+                            <a :href="release_link" target="_blank">
                                 {{ $t("download.oldVersion") }}
                             </a>
                         </div>
