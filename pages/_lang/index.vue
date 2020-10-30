@@ -17,7 +17,7 @@ export default {
         afterSectionLoad(origin, destination) {
 
             if (destination.anchor !== null && destination.anchor !== "home")
-                this.$ga.screenview(destination.anchor)
+                this.$ga.event('Section', 'View', destination.anchor)
 
             if (destination.anchor === "feature" && this.loopSlideInterval === null)
                 this.loopSlideInterval = setInterval(() => this.$refs.fullpage.api.moveSlideRight(), this.interval)
