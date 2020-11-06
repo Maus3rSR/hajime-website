@@ -14,6 +14,13 @@
         "download": "Télécharger gratuitement",
         "view": "Voir le projet sur Github"
     },
+    "backer": {
+        "index": "Merci",
+        "special": "Sponsors spéciaux",
+        "description": {
+            "lokalise": "Une plateforme de gestion de localisation et de traduction"
+        }
+    },
     "about": {
         "index": "À propos",
         "subtitle": "Concentrez-vous sur ce qui compte vraiment",
@@ -53,7 +60,8 @@
         },
         "i18n": {
             "title": "Multilingue",
-            "description": "{0} et {1} disponible. Si vous voulez aider à la traduction ou traduire dans votre langue : {2}"
+            "description": "{0} et {1} disponible. Si vous voulez aider à la traduction ou traduire dans votre langue : {2}",
+            "lokalise": "Avec l'aide de"
         },
         "team": {
             "title": "Équipe",

@@ -69,6 +69,13 @@
                                         <span class="flag-icon flag-icon-gb" />
                                         <a href="#contact" class="btn btn-white btn-sm btn-round">{{ $t("contact.us") }}</a>
                                     </i18n>
+
+                                    <p>
+                                        {{ $t("feature.i18n.lokalise") }}
+                                        <a href="https://lokalise.com/" target="_blank">
+                                            <img width="150" src="~assets/images/sponsors/lokalise.svg" alt="Lokalise">
+                                        </a>
+                                    </p>
                                 </div>
                             </div>
 
