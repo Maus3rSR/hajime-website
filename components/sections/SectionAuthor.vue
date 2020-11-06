@@ -44,7 +44,7 @@ export default {
 
 
 <template>
-    <section id="section-author" class="section section-description fp-auto-height-responsive" data-section="author">
+    <section id="section-author" class="section fp-auto-height-responsive" data-section="author">
         <div class="section-title text-center">
           <h1 class="title-bg">{{ $t("author.index") }}</h1>
         </div>

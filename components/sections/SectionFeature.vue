@@ -1,5 +1,5 @@
 <template>
-    <section id="section-feature" class="section section-description fp-auto-height-responsive" data-section="feature">
+    <section id="section-feature" class="section fp-auto-height-responsive" data-section="feature">
         <div class="section-title text-center">
             <h1 class="title-bg">{{ $t("feature.index") }}</h1>
         </div>
