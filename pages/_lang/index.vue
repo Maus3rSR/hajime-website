@@ -104,9 +104,11 @@ export default {
                 @on-section-next="nextSection()"
             />
 
+            <section-backer />
+
             <section-about />
 
-            <section-feature @on-hover="" />
+            <section-feature />
 
             <section-author
                 @on-slide-previous="previousSlide()"

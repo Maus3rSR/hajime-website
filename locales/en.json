@@ -14,6 +14,13 @@
         "download": "Download for free",
         "view": "View the project on Github"
     },
+    "backer": {
+        "index": "Thank you",
+        "special": "Special Sponsors",
+        "description": {
+            "lokalise": "A localization and translation management platform"
+        }
+    },
     "about": {
         "index": "About",
         "subtitle": "Focus on what really matters",
@@ -53,7 +60,8 @@
         },
         "i18n": {
             "title": "Multilingual",
-            "description": "{0} and {1} are available. If you want to help for the translation or translate into your language: {2}"
+            "description": "{0} and {1} are available. If you want to help for the translation or translate into your language: {2}",
+            "lokalise": "With the support of"
         },
         "team": {
             "title": "Team",

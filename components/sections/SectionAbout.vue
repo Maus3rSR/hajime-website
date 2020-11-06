@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <section class="section section-description fp-auto-height-responsive" data-section="about">
+    <section class="section fp-auto-height-responsive" data-section="about">
         <div class="section-wrapper">
             <div class="section-title text-center">
                 <h1 class="title-bg">{{ $t("about.index") }}</h1>
