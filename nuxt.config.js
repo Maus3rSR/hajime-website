@@ -38,6 +38,7 @@ export default {
         patreonUrl: "https://www.patreon.com/hajime_software",
         paypalUrl: "https://www.paypal.com/paypalme/mausersr",
         discordUrl: "https://discord.gg/EnhaESv",
+        facebookUrl: "https://www.facebook.com/groups/hajimesoftware",
         authorUrl: "https://www.linkedin.com/in/kevinunfricht",
         maltUrl: "https://www.malt.fr/profile/kevinunfricht",
         latestReleaseApiUrl: "https://api.github.com/repos/Maus3rSR/Hajime/releases/latest",

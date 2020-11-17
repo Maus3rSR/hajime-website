@@ -29,6 +29,9 @@ export default {
         },
         author_url() {
             return process.env.authorUrl
+        },
+        facebook_url() {
+            return process.env.facebookUrl
         }
     },
     methods: {
@@ -89,7 +92,12 @@ export default {
             <div class="footer-right">
                 <ul class="social">
                     <li>
-                        <a :href="github_url" target="_blank" title="GITHub Page">
+                        <a :href="facebook_url" target="_blank" title="Facebook Page">
+                            <i class="icon fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a :href="github_url" target="_blank" title="Github Page">
                             <i class="icon fab fa-github"></i>
                         </a>
                     </li>
