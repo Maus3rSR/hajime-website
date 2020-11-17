@@ -103,12 +103,14 @@
         "index": "Contact",
         "us": "Contact us",
         "email": {
-            "title": "By Email",
             "description": "Suggestions, ideas, questions? Please tell us what do you think about Hajime",
             "button": "Send us an email"
         },
+        "facebook": {
+            "description": "Do not miss any news about Hajime within our facebook community group",
+            "button": "Join our community"
+        },
         "discord": {
-            "title": "On Discord",
             "description": "is a simple to use communications server which allows everyone to talk to each other (voice or chat) and to collaborate on creative projects as a community",
             "button": "Join our community"
         }

@@ -107,6 +107,10 @@
             "description": "Des suggestions, idées ou questions ? Dites-nous ce que vous pensez d'Hajime",
             "button": "Envoyer un email"
         },
+        "facebook": {
+            "description": "Ne loupez aucune news sur Hajime avec notre groupe communautaire facebook",
+            "button": "Rejoindre notre communauté"
+        },
         "discord": {
             "title": "Sur Discord",
             "description": "est un serveur de communication simple à utiliser qui permet à chacun de se parler (voix ou chat) et de collaborer sur des projets créatifs en tant que communauté",
