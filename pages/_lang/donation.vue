@@ -3,7 +3,7 @@ export default {
     layout: 'post',
     computed: {
         total() {
-            return this.donationData.body.reduce((total, donation) => total + parseInt(donation.amount, 10), 0)
+            return this.donationData.body.reduce((total, donation) => total + parseFloat(donation.amount), 0)
         }
     },
     async asyncData({ $content, params }) {
