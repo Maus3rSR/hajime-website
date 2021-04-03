@@ -41,6 +41,15 @@ export default {
 <template>
     <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
 
+        <div class="lang-switcher">
+            <a href="/fr">
+                <span class="flag-icon flag-icon-fr" />
+            </a>
+            <a href="/">
+                <span class="flag-icon flag-icon-gb" />
+            </a>
+        </div>
+
         <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
             <span class="menu-icon menu-icon-random">
                 <span class="bars">
@@ -84,3 +93,12 @@ export default {
         </div>
     </header>
 </template>
+
+<style lang="scss" scoped>
+.lang-switcher {
+    position: fixed;
+    top: 40px;
+    left: auto;
+    right: 105px;
+}
+</style>

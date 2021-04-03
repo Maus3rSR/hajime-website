@@ -53,14 +53,6 @@ export default {
                         {{ $t("home.view") }}
                     </a>
                 </div>
-                <div class="btns-action">
-                    <a href="/fr">
-                        <span class="flag-icon flag-icon-fr" />
-                    </a>
-                    <a href="/">
-                        <span class="flag-icon flag-icon-gb" />
-                    </a>
-                </div>
             </div>
 
             <footer class="section-footer scrolldown">
