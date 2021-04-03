@@ -16,12 +16,18 @@ export default {}
                         <h3>{{ $t("backer.special") }}</h3>
                     </div>
 
-                    <div class="col">
+                    <div class="col-6 text-right">
                         <a href="https://lokalise.com/" target="_blank">
                             <img width="150" src="~assets/images/sponsors/lokalise.svg" alt="Lokalise">
                         </a>
                         <p>{{ $t("backer.description.lokalise") }}</p>
                     </div>
+
+                    <div class="col-6 text-left">
+                        <p><strong>{{ $t("backer.translator") }}</strong></p>
+                        <span class="flag-icon flag-icon-it" /> Alberto Montanaria
+                    </div>
+
                 </div>
             </div>
         </div>

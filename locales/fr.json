@@ -17,6 +17,7 @@
     "backer": {
         "index": "Merci",
         "special": "Sponsors spéciaux",
+        "translator": "Merci aux traducteurs pour leur aide précieuse",
         "description": {
             "lokalise": "Une plateforme de gestion de localisation et de traduction"
         }

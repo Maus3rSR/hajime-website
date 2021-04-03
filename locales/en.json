@@ -17,6 +17,7 @@
     "backer": {
         "index": "Thank you",
         "special": "Special Sponsors",
+        "translator": "Thanks to translators for their precious help",
         "description": {
             "lokalise": "A localization and translation management platform"
         }
