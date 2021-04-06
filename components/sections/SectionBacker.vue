@@ -25,7 +25,7 @@ export default {}
 
                     <div class="col-6 text-left">
                         <p><strong>{{ $t("backer.translator") }}</strong></p>
-                        <span class="flag-icon flag-icon-it" /> Alberto Montanaria
+                        <span class="flag-icon flag-icon-it" /> Alberto Montanari
                     </div>
 
                 </div>
