@@ -61,7 +61,7 @@
         },
         "i18n": {
             "title": "Multilingue",
-            "description": "{0} et {1} disponible. Si vous voulez aider à la traduction ou traduire dans votre langue : {2}",
+            "description": "disponible. Si vous voulez aider à la traduction ou traduire dans votre langue : {0}",
             "lokalise": "Avec l'aide de"
         },
         "team": {
