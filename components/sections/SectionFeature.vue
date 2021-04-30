@@ -67,6 +67,7 @@
                                     <i18n tag="p" path="feature.i18n.description">
                                         <span class="flag-icon flag-icon-fr" />
                                         <span class="flag-icon flag-icon-gb" />
+                                        <span class="flag-icon flag-icon-it" />
                                         <a href="#contact" class="btn btn-white btn-sm btn-round">{{ $t("contact.us") }}</a>
                                     </i18n>
 
